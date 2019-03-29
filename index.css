@@ -1,0 +1,131 @@
+.top {
+  height: 50vh;
+  width: 100%;
+  background-image: url(./image/bgimage.jpg);
+  background-size: 100%;
+  filter: blur(1.5px);
+}
+
+.bottom {
+  height: fit-content;
+  background-color: #f3f3ee;
+}
+
+.inner {
+  background-color: #FFFFFF;
+  margin-top: 5vh;
+  box-shadow: 0.05px 0.05px 2.5px 0px #be98f0;
+}
+
+.innerFirst {
+  margin-top: 160px;
+}
+.innerLast {
+  margin-bottom: 50px;
+}
+
+/* Intro div */
+.mid {
+  position: absolute;
+  z-index: 20;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 10vh;
+  display: flex;
+  background-color: #3f8848;
+  width: 800px;
+  width: 800px;
+  height: 330px;
+  margin: auto;
+  margin-top: 15vh;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px #3d723c;
+}
+
+.mid #me, .mid #line, .mid #intro_text {
+  margin: auto;
+}
+
+.mid #me {
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  background-size: cover;
+  background-image: url(./image/me.jpg);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 54% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 54% 100%, 0% 100%);
+}
+
+.mid #line {
+  margin-left: 9.5%;
+  margin-inline-end: 5%;
+  height: 40vh;
+  border-width: 3px 0px 3px 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #f7f6f1, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.mid #intro_text {
+  margin-inline-start: unset;
+  margin-inline-end: 14%;
+}
+
+.mid #name {
+  font-family: fantasy;
+  font-size: 35px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px #274526;
+  color: #f6f6f0;
+}
+
+.mid ul {
+  list-style: none;
+  width: max-content;
+  font-family: Corbel;
+  color: aliceblue;
+  font-size: large;
+  font-weight: 600;
+  line-height: 40px;
+}
+.mid li a{
+  margin-inline-start: 7px;
+}
+.mid li img{
+  width: 23px;
+}
+.mid #btnDiv{
+  margin-left: 40px;
+  letter-spacing: 15px;
+}
+
+.btn-circle {
+  color: #c8d6e1;
+  width: 40px;
+  height: 40px;
+  padding: 3px 11px;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 25px;
+  box-shadow: 1px 1px 3px #2a3b5d;
+}
+.btn-circle:hover{
+  color: #ffffff;
+  box-shadow: 0.5px 0.5px 10px #ffffff;
+}
+
+/* Content position */
+.text {
+  margin-top: 4vh;
+}
+
+/* Inner Title */
+.bottom .title {
+  color: #416d30;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.bottom img {
+  width: 5vh;
+}
