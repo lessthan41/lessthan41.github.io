@@ -14,6 +14,7 @@
   <!-- import CSS -->
   <link rel="stylesheet" href="./index.css">
   <title>Lessthan41's Website</title>
+  <link rel="icon" type="image/ico" href="image/icon.png" />
 </head>
 
 <body>
@@ -39,15 +40,18 @@
       </ul>
       <!-- Button -->
       <div id=btnDiv>
-        <button type="button" class="btn btn-default btn-circle btn-lg" formtarget="_blank" onclick="location.href='#'" id=fb style="background-color: #3b5998;">
-          <i class="fab fa-facebook-f"></i>
-        </button>
-        <button type="button" class="btn btn-default btn-circle btn-lg" formtarget="_blank" onclick="location.href='#'" id=ig style="background-color: #f77737;">
-          <i class="fab fa-instagram"></i>
-        </button>
-        <button type="button" class="btn btn-default btn-circle btn-lg" formtarget="_blank" onclick="location.href='#'" id=gh style="background-color: #6e5494;">
-          <i class="fab fa-github"></i>
-        </button>
+        <a href="https://www.facebook.com/lessthan41" target="_blank">
+          <button type="button" class="btn btn-default btn-circle btn-lg" id=fb style="background-color: #3b5998;">
+            <i class="fab fa-facebook-f"></i>
+          </button></a> <!-- </a> must be here -->
+        <a href="https://www.instagram.com/lessthan41/" target="_blank">
+          <button type="button" class="btn btn-default btn-circle btn-lg" id=ig style="background-color: #f77737;">
+            <i class="fab fa-instagram"></i>
+          </button></a>
+        <a href="https://github.com/lessthan41" target="_blank">
+          <button type="button" class="btn btn-default btn-circle btn-lg" id=gh style="background-color: #6e5494;">
+            <i class="fab fa-github"></i>
+          </button></a>
       </div>
     </div>
   </div>
@@ -60,12 +64,14 @@
     <div class="inner innerFirst container"><br><br>
       <div class="row">
         <div class="col-1"></div>
-        <div class="col-9 title"><img src="./image/meicon.png" alt="homework" class="titleImg"> About Me</div>
+        <div class="col-9 title"><img src="./image/meicon.png" alt="meicon" class="titleImg"> About Me</div>
       </div>
       <div class="row text">
         <div class="col-3"></div>
-        <div class="col-6">
-          <a>Hi! I'm Wayne Ho, a college student in NTU, Taiwan.</a>
+        <div class="col-9">
+          <span>Hi! I'm Wayne Ho, a college student in NTU, Taiwan. <br>This is a resume demo using
+            <a href="https://getbootstrap.com/" target="_blank">BootStrap</a> and
+            <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</span>
         </div>
       </div><br>
     </div>
@@ -73,10 +79,12 @@
     <div class="inner container"><br><br>
       <div class="row">
         <div class="col-1"></div>
-        <div class="col-9 title"><img src="./image/skills.png" alt="homework" class="titleImg"> Skills</div>
+        <div class="col-9 title"><img src="./image/skills.png" alt="skills" class="titleImg"> Skills</div>
       </div>
       <div class="row text">
-        <div class="col-6"><img src="..." alt="..." class="img-thumbnail"></div>
+        <div class="col-6">
+
+        </div>
         <div class="col-6">
         </div>
       </div>
@@ -85,14 +93,23 @@
     <div class="inner container"><br><br>
       <div class="row">
         <div class="col-1"></div>
-        <div class="col-9 title"><img src="./image/experience.png" alt="homework" class="titleImg"> Experience</div>
+        <div class="col-9 title"><img src="./image/education.png" alt="experience" class="titleImg"> Education</div>
       </div>
       <div class="row text">
         <div class="col-3"></div>
-        <div class="col-6">
-          <ul>
-            <li>Homework1:&nbsp<a href="https://lessthan41.github.io/FrontEnd_2019/classtable.html" target="_blank">classtable.html</a></li>
-            <li>Homework2:&nbsp<a href="https://lessthan41.github.io/FrontEnd_2019/intro.html" target="_blank">intro.html</a></li>
+        <div class="col-9">
+          <ul class="exp">
+            <li><span>2011</span><a href="http://www.jdjh.ntpc.edu.tw/default_page.asp" target="_blank">Jeng-De Junior High School</a></li>
+          </ul>
+          <svg width="40" height="50">
+            <line x1="30" y1="0" x2="30" y2="35" stroke="#205424" /></svg>
+          <ul class="exp">
+            <li><span>2014</span><a href="https://www2.ck.tp.edu.tw/" target="_blank">Chien-Kuo Senior High School</a></li>
+          </ul>
+          <svg width="40" height="50">
+            <line x1="30" y1="0" x2="30" y2="35" stroke="#205424" /></svg>
+          <ul class="exp">
+            <li><span>2017</span><a href="http://www.geog.ntu.edu.tw/index.php/tw/" target="_blank">Dept. of Geography, National Taiwan University</a></li>
           </ul><br>
         </div>
       </div>
@@ -101,7 +118,19 @@
     <div class="inner container"><br><br>
       <div class="row">
         <div class="col-1"></div>
-        <div class="col-9 title"><img src="./image/interest.png" alt="homework" class="titleImg"> Interest</div>
+        <div class="col-9 title"><img src="./image/experience.png" alt="experience" class="titleImg"> Experience</div>
+      </div>
+      <div class="row text">
+        <div class="col-3"></div>
+        <div class="col-9">
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------>
+    <div class="inner container"><br><br>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9 title"><img src="./image/interest.png" alt="interest" class="titleImg"> Interest</div>
       </div>
       <div class="row text">
         <div class="col-3"></div>

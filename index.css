@@ -20,6 +20,7 @@
 .innerFirst {
   margin-top: 160px;
 }
+
 .innerLast {
   margin-bottom: 50px;
 }
@@ -53,7 +54,6 @@
   width: -webkit-fill-available;
   background-size: cover;
   background-image: url(./image/me.jpg);
-  -webkit-clip-path: polygon(0 0, 100% 0%, 54% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 54% 100%, 0% 100%);
 }
 
@@ -88,13 +88,16 @@
   font-weight: 600;
   line-height: 40px;
 }
-.mid li a{
+
+.mid li a {
   margin-inline-start: 7px;
 }
-.mid li img{
+
+.mid li img {
   width: 23px;
 }
-.mid #btnDiv{
+
+#btnDiv {
   margin-left: 40px;
   letter-spacing: 15px;
 }
@@ -109,7 +112,8 @@
   border-radius: 25px;
   box-shadow: 1px 1px 3px #2a3b5d;
 }
-.btn-circle:hover{
+
+.btn-circle:hover {
   color: #ffffff;
   box-shadow: 0.5px 0.5px 10px #ffffff;
 }
@@ -117,6 +121,7 @@
 /* Content position */
 .text {
   margin-top: 4vh;
+  margin-bottom: 5vh;
 }
 
 /* Inner Title */
@@ -128,4 +133,34 @@
 
 .bottom img {
   width: 5vh;
+}
+
+/* Bottom href Style  */
+.bottom a{
+  color: #a69f62;
+}
+
+.bottom a:hover{
+  color:#524ed5;
+  transition: color .15s ease-in-out,
+   background-color .15s ease-in-out,
+       border-color .15s ease-in-out,
+         box-shadow .15s ease-in-out,
+    text-decoration .15s ease-in-out;
+}
+
+
+/* Experience li */
+.exp {
+  list-style: none;
+  padding-left: initial;
+
+}
+
+.exp span {
+  color: #cfcf4f;
+  font-family: Corbel;
+  font-size: xx-large;
+  font-weight: 600;
+  margin-inline-end: 40px;
 }
