@@ -1,4 +1,4 @@
-// data
+// Data
 var datasets = [{
   data: [
     50, 50, 40, 40, 40, 30, 20
@@ -12,7 +12,6 @@ var datasets = [{
     'rgb(63, 136, 72)', //dark green
     'rgb(102, 226, 118)', //light green
   ]
-  // backgroundColor: ['rgba(0, 0, 0, 0.1)']
 }];
 
 var labels = [
@@ -25,7 +24,7 @@ var labels = [
   'JAVA'
 ];
 
-// options
+// Options
 var label = function(tooltipItem) {
   var char = tooltipItem.xLabel + "%";
   return char;
@@ -41,7 +40,7 @@ var config = {
   },
   // -----------------------------------------
   options: {
-    //  Do not show label
+    //  Do Not Show Label
     legend: {
       display: false
     },
@@ -53,7 +52,7 @@ var config = {
       xAlign: "left"
     },
 
-    // canvas padding
+    // Canvas Padding
     layout: {
       padding: {
         left: 10,
@@ -63,10 +62,10 @@ var config = {
       }
     },
 
-    // axis name and range
+    // Axis Name and Range
     scales: {
       xAxes: [{
-        // x-axis name
+        // x-axis Name
         scaleLabel: {
           display: true,
           labelString: "Percentage(%)",
@@ -83,7 +82,7 @@ var config = {
       }]
     },
 
-    // animation duration
+    // Animation Duration
     animation: {
       duration: 3000
     }
@@ -91,6 +90,9 @@ var config = {
   // -----------------------------------------
 };
 
+// -------------------------------------------
+
+// Start to Plot
 var ctx, chart, plotIndex;
 ctx = document.getElementById('chart-area');
 ctx.style.borderRadius = '5px';
@@ -100,13 +102,22 @@ chart = new Chart(ctx, config);
 chart.reset(); // create a empty canvas
 plotIndex = true;
 
-var replot = function(){
+function replot(){
   chart = new Chart(ctx, config);
 }
 
+// Check if Canvas is Inside the Range of Screen
+function isOnScreen(){
+    var currentPosition = $('#chart-area').offset().top + $('#chart-area').height()/2; // top + bot/2 = mid
+    var screenTop = $(window).scrollTop();
+    var screenBottom = $(window).scrollTop() + $(window).height();
+    return (currentPosition > screenTop && currentPosition < screenBottom) ? true : false;
+}
+console.log($('#chart-area').height());
+// After Loading Website, Check Canvas Replot or not
 $(window).scroll(function(){
-  if(plotIndex){
+  if(isOnScreen() && plotIndex){
     replot();
     plotIndex = false;
   }
-});
+})
