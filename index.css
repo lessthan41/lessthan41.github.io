@@ -152,6 +152,31 @@
     text-decoration .25s ease-in-out;
 }
 
+/* Skill Img */
+#carouselExampleControls{
+  width: 22vw;
+  margin: auto;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: #645955;
+  border-radius: 50%;
+}
+
+/* Skill Intro */
+.skillIntro{
+  margin-top: 5vh;
+  margin-left: 4vw;
+}
+
+.skillIntro h4{
+  font-family: Corbel;
+  color: #3f8848;
+}
+
+.skillIntro ul{
+  margin-bottom: 5vh;
+}
 
 /* Education li */
 .edu {
@@ -163,7 +188,6 @@
 .edu .eduDetailDate{
   margin-left: 1vw;
   color: grey;
-  /* font-weight: 600; */
 }
 
 .edu .eduLink{
