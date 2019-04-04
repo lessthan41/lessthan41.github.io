@@ -26,7 +26,7 @@ var labels = [
 
 // Options
 var label = function(tooltipItem) {
-  var char = tooltipItem.xLabel + "%";
+  var char = tooltipItem.xLabel + "%"; 
   return char;
 }
 
