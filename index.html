@@ -67,26 +67,34 @@
         <div class="col-9 title"><img src="./image/meicon.png" alt="meicon" class="titleImg"> About Me</div>
       </div>
       <div class="row text">
-        <div class="col-3"></div>
-        <div class="col-9">
-          <span>Hi! I'm Wayne Ho, a college student in NTU, Taiwan. <br>This is a resume demo using
-            <a href="https://getbootstrap.com/" target="_blank">BootStrap</a> and
-            <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.</span>
+        <div class="col-2"></div>
+        <div class="col-8">
+          <span>Hi ! I'm Wayne Ho, a student in NTU, Taiwan. I major in Geography, learning Geographic Information System, spatial data process, Python and R. Now I'm working on a Post-disaster Information System based on LINE with <a href="https://bourbon0212.github.io/107-Frontend-Programming/Week6/index.html"
+              target="_blank">Bourbon</a>, Morris, as well as learning interface design and JAVA programming.
+            <br><br>This is a personal intro demo using
+            <a href="https://getbootstrap.com/" target="_blank">BootStrap</a>,
+            <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and
+            <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>.</span>
         </div>
+        <div class="col-2"></div>
       </div><br>
     </div>
     <!------------------------------------------>
     <div class="inner container"><br><br>
       <div class="row">
         <div class="col-1"></div>
-        <div class="col-9 title"><img src="./image/skills.png" alt="skills" class="titleImg"> Skills</div> 
+        <div class="col-9 title"><img src="./image/skills.png" alt="skills" class="titleImg"> Skills</div>
       </div>
       <div class="row text">
-        <div class="col-6">
+        <div class="col-2"></div>
+        <div class="col-8">
+
+          <div class="chart-div">
+            <canvas id="chart-area"></canvas>
+          </div>
 
         </div>
-        <div class="col-6">
-        </div>
+        <div class="col-2"></div>
       </div>
     </div>
     <!------------------------------------------>
@@ -97,21 +105,90 @@
       </div>
       <div class="row text">
         <div class="col-3"></div>
-        <div class="col-9">
-          <ul class="exp">
-            <li><span>2011</span><a href="http://www.jdjh.ntpc.edu.tw/default_page.asp" target="_blank">Jeng-De Junior High School</a></li>
-          </ul>
-          <svg width="40" height="50">
-            <line x1="30" y1="0" x2="30" y2="35" stroke="#205424" /></svg>
-          <ul class="exp">
-            <li><span>2014</span><a href="https://www2.ck.tp.edu.tw/" target="_blank">Chien-Kuo Senior High School</a></li>
-          </ul>
-          <svg width="40" height="50">
-            <line x1="30" y1="0" x2="30" y2="35" stroke="#205424" /></svg>
-          <ul class="exp">
-            <li><span>2017</span><a href="http://www.geog.ntu.edu.tw/index.php/tw/" target="_blank">Dept. of Geography, National Taiwan University</a></li>
-          </ul><br>
+        <div class="col-7">
+
+          <span class="year">2005</span>
+          <div class="flow">
+            <svg width="80" height="200">
+              <line x1="30" y1="20" x2="30" y2="200" stroke="#818990" /></svg>
+            <div class="schoolInfo">
+              <ul class="edu">
+                <li>
+                  <h4>Primary School</h4>
+                </li>
+                <li class="eduDetailDate"><span>2005 Sep. ~ 2011 Jun.</span></li><br>
+                <li>
+                  <p>In primary school, I laid the foundation for learning something new in the following years.</p>
+                </li>
+                <li class="eduLink">
+                  <a href="http://www.dkes.ntpc.edu.tw/" target="_blank">Deng-Gong Elementary School</a><br>
+                  <a href="http://www.tsps.ntpc.edu.tw/" target="_blank">Tam-Shui Elementary School</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <span class="year">2011</span>
+          <div class="flow">
+            <svg width="80" height="200">
+              <line x1="30" y1="20" x2="30" y2="190" stroke="#818990" /></svg>
+            <div class="schoolInfo">
+              <ul class="edu">
+                <li>
+                  <h4>Junior high school</h4>
+                </li>
+                <li class="eduDetailDate"><span>2011 Sep. ~ 2014 Jun.</span></li><br>
+                <li>
+                  <p>During junior high school time, I learned some basic subjects to know the world more.</p>
+                </li>
+                <li class="eduLink">
+                  <a href="http://www.jdjh.ntpc.edu.tw/default_page.asp" target="_blank">Jeng-De Junior High School</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <span class="year">2014</span>
+          <div class="flow">
+            <svg width="80" height="200">
+              <line x1="30" y1="20" x2="30" y2="190" stroke="#818990" /></svg>
+            <div class="schoolInfo">
+              <ul class="edu">
+                <li>
+                  <h4>Senior High School</h4>
+                </li>
+                <li class="eduDetailDate"><span>2014 Sep. ~ 2017 Jun.</span></li><br>
+                <li>
+                  <p>High school drills on subjects in different realms deeper, preparing for choosing major in the future.</p>
+                </li>
+                <li class="eduLink">
+                  <a href="https://www2.ck.tp.edu.tw/" target="_blank">Chien-Kuo Senior High School</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <span class="year">2017</span>
+          <div class="flow">
+            <svg width="80" height="200">
+              <line x1="30" y1="20" x2="30" y2="190" stroke="#818990" /></svg>
+            <div class="schoolInfo">
+              <ul class="edu">
+                <li>
+                  <h4>University</h4>
+                </li>
+                <li class="eduDetailDate"><span>2005 Sep. ~</span></li><br>
+                <li>
+                  <p>In Department of Geography, I learn about spatial thinking, data process, basic remote sensing and so on.</p>
+                </li>
+                <li class="eduLink">
+                  <a href="http://www.geog.ntu.edu.tw/index.php/tw/" target="_blank">Dept. of Geography, National Taiwan University</a>
+                </li>
+              </ul>
+            </div><br>
+          </div>
         </div>
+        <div class="col-3"></div>
       </div>
     </div>
     <!------------------------------------------>
@@ -138,7 +215,7 @@
           <ul>
             <li>Homework1:&nbsp<a href="https://lessthan41.github.io/FrontEnd_2019/classtable.html" target="_blank">classtable.html</a></li>
             <li>Homework2:&nbsp<a href="https://lessthan41.github.io/FrontEnd_2019/intro.html" target="_blank">intro.html</a></li>
-          </ul><br>
+          </ul>
         </div>
       </div>
     </div>
@@ -154,20 +231,29 @@
           <ul>
             <li>Homework1:&nbsp<a href="https://lessthan41.github.io/FrontEnd_2019/classtable.html" target="_blank">classtable.html</a></li>
             <li>Homework2:&nbsp<a href="https://lessthan41.github.io/FrontEnd_2019/intro.html" target="_blank">intro.html</a></li>
-          </ul><br>
+          </ul>
         </div>
       </div>
     </div>
     <!------------------------------------------>
   </div>
-  </div>
-  </div>
+
+  <!--==================================
+            import Chart.js
+  ====================================-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
   <!--==================================
           import Bootstrap's JS
   ====================================-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--==================================
+             import index.js
+  ====================================-->
+  <script type="text/javascript" src="./index.js"></script>
+
 </body>
 
 </html>

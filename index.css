@@ -15,6 +15,7 @@
   background-color: #FFFFFF;
   margin-top: 5vh;
   box-shadow: 0.05px 0.05px 2.5px 0px #be98f0;
+  border-radius: 5px;
 }
 
 .innerFirst {
@@ -110,7 +111,7 @@
   font-size: 18px;
   line-height: 1.5;
   border-radius: 25px;
-  box-shadow: 1px 1px 3px #2a3b5d;
+  box-shadow: 2px 2px 4px #2c5427d1;
 }
 
 .btn-circle:hover {
@@ -121,10 +122,12 @@
 /* Content position */
 .text {
   margin-top: 4vh;
-  margin-bottom: 5vh;
+  border-style: solid;
+  border-color: white;
+  border-bottom-width: 40px;
 }
 
-/* Inner Title */
+/* Bottom Title */
 .bottom .title {
   color: #416d30;
   font-size: x-large;
@@ -142,25 +145,47 @@
 
 .bottom a:hover{
   color:#524ed5;
-  transition: color .15s ease-in-out,
-   background-color .15s ease-in-out,
-       border-color .15s ease-in-out,
-         box-shadow .15s ease-in-out,
-    text-decoration .15s ease-in-out;
+  transition: color .25s ease-in-out,
+   background-color .25s ease-in-out,
+       border-color .25s ease-in-out,
+         box-shadow .25s ease-in-out,
+    text-decoration .25s ease-in-out;
 }
 
 
-/* Experience li */
-.exp {
+/* Education li */
+.edu {
   list-style: none;
   padding-left: initial;
-
+  margin-left: 5vw;
 }
 
-.exp span {
+.edu .eduDetailDate{
+  margin-left: 1vw;
+  color: grey;
+  /* font-weight: 600; */
+}
+
+.edu .eduLink{
+  margin-left: 3vw;
+}
+
+.edu span{
+  font-family: Corbel;
+}
+
+.edu p{
+  margin-left: 3vw;
+}
+
+.year {
   color: #cfcf4f;
   font-family: Corbel;
   font-size: xx-large;
   font-weight: 600;
   margin-inline-end: 40px;
+}
+
+.flow{
+  display: flex;
 }
