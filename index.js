@@ -1,7 +1,7 @@
 // Data
 var datasets = [{
   data: [
-    50, 50, 40, 40, 40, 30, 20
+    50, 50, 40, 40, 40, 30, 10
   ],
   backgroundColor: [
     'rgb(238, 63, 63)', //red

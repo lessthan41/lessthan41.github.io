@@ -155,7 +155,7 @@
 /* Skill Img */
 #carouselExampleControls{
   width: 22vw;
-  margin: auto;
+  margin-top: 20px;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon{
@@ -176,6 +176,10 @@
 
 .skillIntro ul{
   margin-bottom: 5vh;
+}
+
+.skillIntro p{
+  margin-left: 4vw;
 }
 
 /* Education li */
