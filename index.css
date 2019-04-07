@@ -26,6 +26,10 @@
   margin-bottom: 50px;
 }
 
+.flow{
+  display: flex;
+}
+
 /* Intro div */
 .mid {
   position: absolute;
@@ -103,7 +107,7 @@
   letter-spacing: 15px;
 }
 
-.btn-circle { 
+.btn-circle {
   color: #c8d6e1;
   width: 40px;
   height: 40px;
@@ -163,6 +167,19 @@
   border-radius: 50%;
 }
 
+#carouselDiv{
+  height: 470px;
+}
+
+#ArcmapImg{
+  margin-top: 30%;
+  margin-bottom: 20%;
+}
+
+figcaption p{ /* Date */
+  text-align: right;
+}
+
 /* Skill Intro */
 .skillIntro{
   margin-top: 5vh;
@@ -187,23 +204,16 @@
   list-style: none;
   padding-left: initial;
   margin-left: 5vw;
+  margin-top: 5vh;
 }
 
 .edu .eduDetailDate{
-  margin-left: 1vw;
+  margin-left: 2vw;
   color: grey;
-}
-
-.edu .eduLink{
-  margin-left: 3vw;
 }
 
 .edu span{
   font-family: Corbel;
-}
-
-.edu p{
-  margin-left: 3vw;
 }
 
 .year {
@@ -212,8 +222,4 @@
   font-size: xx-large;
   font-weight: 600;
   margin-inline-end: 40px;
-}
-
-.flow{
-  display: flex;
 }

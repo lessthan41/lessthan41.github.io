@@ -1,7 +1,7 @@
 // Data
 var datasets = [{
   data: [
-    50, 50, 40, 40, 40, 30, 10
+    80, 80, 70, 70, 70, 60, 60
   ],
   backgroundColor: [
     'rgb(238, 63, 63)', //red
@@ -26,7 +26,7 @@ var labels = [
 
 // Options
 var label = function(tooltipItem) {
-  var char = tooltipItem.xLabel + "%"; 
+  var char = tooltipItem.xLabel + "%";
   return char;
 }
 
@@ -73,7 +73,7 @@ var config = {
         },
         ticks:{
           min: 0,
-          max: 70
+          max: 100
         }
       }],
 
@@ -113,7 +113,6 @@ function isOnScreen(){
     var screenBottom = $(window).scrollTop() + $(window).height();
     return (currentPosition > screenTop && currentPosition < screenBottom) ? true : false;
 }
-console.log($('#chart-area').height());
 // After Loading Website, Check Canvas Replot or not
 $(window).scroll(function(){
   if(isOnScreen() && plotIndex){

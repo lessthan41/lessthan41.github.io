@@ -14,7 +14,7 @@
   <!-- import CSS -->
   <link rel="stylesheet" href="./index.css">
   <title>Lessthan41's Website</title>
-  <link rel="icon" type="image/ico" href="image/icon.png" /> 
+  <link rel="icon" type="image/ico" href="image/icon.png" />
 </head>
 
 <body>
@@ -97,18 +97,33 @@
 
       <div class="row">
         <div class="col-2"></div>
-        <div class="col-8 flow">
-          <!-- Carousel Python -->
+        <div class="col-8 flow" id=carouselDiv>
+          <!-- Carousel -->
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="./image/python1.png" alt="python">
+                <figure class="figure">
+                  <img class="figure-img img-fluid rounded d-block w-100" src="./image/python1.png" alt="python">
+                  <figcaption class="figure-caption text-center">Density of villages in Taipei, using Python.<br><p>(June, 2018)</p></figcaption>
+                </figure>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="./image/python2.png" alt="python">
+                <figure class="figure">
+                  <img class="figure-img img-fluid rounded d-block w-100" src="./image/python2.png" alt="python">
+                  <figcaption class="figure-caption text-center">Centroid and buffer demo, using Python.<br><p>(June, 2018)</p></figcaption>
+                </figure>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="./image/openlayers.png" alt="python">
+                <figure class="figure">
+                  <img class="figure-img img-fluid rounded d-block w-100" src="./image/openlayers.png" alt="HTML">
+                  <figcaption class="figure-caption text-center">Referendum in Taiwan ─ agree or not, using HTML.<br><p>(Jan. , 2018)</p></figcaption>
+                </figure>
+              </div>
+              <div class="carousel-item">
+                <figure class="figure">
+                  <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/arcmap.jpg" alt="Arcmap">
+                  <figcaption class="figure-caption text-center">3D Terrain Model, using ArcMap<br><p>(May, 2018)</p></figcaption>
+                </figure>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -148,7 +163,7 @@
         <div class="col-2"></div>
         <div class="col-8">
           <div class="skillIntro">
-            <h4>ArcGIS</h4>
+            <h4>ArcMap</h4>
             <p>Shapefile Process, Network Analysis, Intesection, Buffer et cetera.</p>
             <h4>ENVI</h4>
             <p>Satelite Image, Aerial Photo Process, Region of Interest Analysis.</p>
@@ -176,76 +191,65 @@
             <div class="schoolInfo">
               <ul class="edu">
                 <li>
-                  <h4>Primary School</h4>
+                  <a href="http://www.dkes.ntpc.edu.tw/" target="_blank">
+                    <h5>Deng-Gong Elementary School</h5>
+                  </a>
                 </li>
                 <li class="eduDetailDate"><span>2005 Sep. ~ 2011 Jun.</span></li><br>
                 <li>
-                  <p>In primary school, I laid the foundation for learning something new in the following years.</p>
+                  <a href="http://www.tsps.ntpc.edu.tw/" target="_blank">
+                    <h5>Tam-Shui Elementary School</h5>
+                  </a>
                 </li>
-                <li class="eduLink">
-                  <a href="http://www.dkes.ntpc.edu.tw/" target="_blank">Deng-Gong Elementary School</a><br>
-                  <a href="http://www.tsps.ntpc.edu.tw/" target="_blank">Tam-Shui Elementary School</a>
-                </li>
+                <li class="eduDetailDate"><span>2005 Sep. ~ 2011 Jun.</span></li><br>
               </ul>
             </div>
           </div>
 
           <span class="year">2011</span>
           <div class="flow">
-            <svg width="80" height="200">
-              <line x1="30" y1="20" x2="30" y2="190" stroke="#818990" /></svg>
+            <svg width="80" height="120">
+              <line x1="30" y1="20" x2="30" y2="110" stroke="#818990" /></svg>
             <div class="schoolInfo">
               <ul class="edu">
                 <li>
-                  <h4>Junior high school</h4>
+                  <a href="http://www.jdjh.ntpc.edu.tw/default_page.asp" target="_blank">
+                    <h5>Jeng-De Junior High School</h5>
+                  </a>
                 </li>
-                <li class="eduDetailDate"><span>2011 Sep. ~ 2014 Jun.</span></li><br>
-                <li>
-                  <p>During junior high school time, I learned some basic subjects to know the world more.</p>
-                </li>
-                <li class="eduLink">
-                  <a href="http://www.jdjh.ntpc.edu.tw/default_page.asp" target="_blank">Jeng-De Junior High School</a>
-                </li>
+                <li class="eduDetailDate"><span>2011 Sep. ~ 2014 Jun.</span></li>
               </ul>
             </div>
           </div>
 
           <span class="year">2014</span>
           <div class="flow">
-            <svg width="80" height="200">
-              <line x1="30" y1="20" x2="30" y2="190" stroke="#818990" /></svg>
+            <svg width="80" height="120">
+              <line x1="30" y1="20" x2="30" y2="110" stroke="#818990" /></svg>
             <div class="schoolInfo">
               <ul class="edu">
                 <li>
-                  <h4>Senior High School</h4>
+                  <a href="https://www2.ck.tp.edu.tw/" target="_blank">
+                    <h5>Chien-Kuo Senior High School</h5>
+                  </a>
                 </li>
                 <li class="eduDetailDate"><span>2014 Sep. ~ 2017 Jun.</span></li><br>
-                <li>
-                  <p>High school drills on subjects in different realms deeper, preparing for choosing major in the future.</p>
-                </li>
-                <li class="eduLink">
-                  <a href="https://www2.ck.tp.edu.tw/" target="_blank">Chien-Kuo Senior High School</a>
-                </li>
               </ul>
             </div>
           </div>
 
           <span class="year">2017</span>
           <div class="flow">
-            <svg width="80" height="200">
-              <line x1="30" y1="20" x2="30" y2="190" stroke="#818990" /></svg>
+            <svg width="80" height="120">
+              <line x1="30" y1="20" x2="30" y2="120" stroke="#818990" /></svg>
             <div class="schoolInfo">
               <ul class="edu">
                 <li>
-                  <h4>University</h4>
+                  <a href="http://www.geog.ntu.edu.tw/index.php/tw/" target="_blank">
+                    <h5>Dept. of Geography, National Taiwan University</h5>
+                  </a>
                 </li>
                 <li class="eduDetailDate"><span>2005 Sep. ~</span></li><br>
-                <li>
-                  <p>In Department of Geography, I learn about spatial thinking, data process, basic remote sensing and so on.</p>
-                </li>
-                <li class="eduLink">
-                  <a href="http://www.geog.ntu.edu.tw/index.php/tw/" target="_blank">Dept. of Geography, National Taiwan University</a>
-                </li>
               </ul>
             </div><br>
           </div>
