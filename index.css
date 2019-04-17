@@ -13,7 +13,7 @@
 
 .inner {
   background-color: #FFFFFF;
-  margin-top: 5vh;
+  margin-top: 7vh;
   box-shadow: 0.05px 0.05px 2.5px 0px #be98f0;
   border-radius: 5px;
 }
@@ -22,11 +22,18 @@
   margin-top: 160px;
 }
 
+/* About me */
+.innerFirst p {
+  color: #186410;
+  font-weight: bold;
+  display: inline;
+}
+
 .innerLast {
   margin-bottom: 50px;
 }
 
-.flow{
+.flow {
   display: flex;
 }
 
@@ -98,8 +105,11 @@
   margin-inline-start: 7px;
 }
 
-.mid li img {
-  width: 23px;
+.mid li i {
+  width: 25px;
+  font-size: larger;
+  text-align: center;
+  color: #e5e5ea;
 }
 
 #btnDiv {
@@ -139,64 +149,92 @@
 }
 
 .bottom img {
-  width: 5vh;
+  width: 4.5vh;
 }
 
 /* Bottom href Style  */
-.bottom a{
+.bottom a {
   color: #a69f62;
 }
 
-.bottom a:hover{
-  color:#524ed5;
+.bottom a:hover {
+  color: #524ed5;
   transition: color .25s ease-in-out,
-   background-color .25s ease-in-out,
-       border-color .25s ease-in-out,
-         box-shadow .25s ease-in-out,
+    background-color .25s ease-in-out,
+    border-color .25s ease-in-out,
+    box-shadow .25s ease-in-out,
     text-decoration .25s ease-in-out;
 }
 
+/* Bottom fas */
+.bottom .fas{
+  font-weight: 900;
+  color: #3f8848;
+  vertical-align: initial;
+  width: 4vh;
+}
+
 /* Skill Img */
-#carouselExampleControls{
-  width: 22vw;
+#carousel1{
+  width: 330px;
   margin-top: 20px;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon{
+#carousel2{
+  width: 330px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
   background-color: #645955;
   border-radius: 50%;
 }
 
-#carouselDiv{
+.carouselDiv {
   height: 470px;
+  margin-bottom: 7vh;
 }
 
-#ArcmapImg{
-  margin-top: 30%;
-  margin-bottom: 20%;
+.figure{
+  padding: 8px;
+  height: 450px;
+  background-color: #e8eae5;
 }
 
-figcaption p{ /* Date */
+#ArcmapImg {
+  vertical-align: middle;
+}
+
+figcaption p {
+  /* Date */
   text-align: right;
 }
 
 /* Skill Intro */
-.skillIntro{
+#skillIntro1 {
   margin-top: 5vh;
-  margin-left: 4vw;
+  /* margin-left: 4vw; */
 }
 
-.skillIntro h4{
+#skillIntro2 {
+  margin-left: 1vw;
+  margin-right: 2vw;
+}
+
+.skillIntro h4 {
   font-family: Corbel;
   color: #3f8848;
 }
 
-.skillIntro ul{
+.skillIntro ul {
   margin-bottom: 5vh;
 }
 
-.skillIntro p{
+.skillIntro p {
   margin-left: 4vw;
+}
+
+#skillTitle {
+  margin-bottom: 20px;
 }
 
 /* Education li */
@@ -205,14 +243,15 @@ figcaption p{ /* Date */
   padding-left: initial;
   margin-left: 5vw;
   margin-top: 5vh;
+  margin-bottom: 0px;
 }
 
-.edu .eduDetailDate{
+.edu .eduDetailDate {
   margin-left: 2vw;
   color: grey;
 }
 
-.edu span{
+.edu span {
   font-family: Corbel;
 }
 
@@ -222,4 +261,97 @@ figcaption p{ /* Date */
   font-size: xx-large;
   font-weight: 600;
   margin-inline-end: 40px;
+}
+
+/* Experience li */
+.companyUl{
+  margin-top: 30px;
+  list-style: none;
+  padding-left: 0px;
+}
+.workdate{
+  font-family: Corbel;
+  color: grey;
+  margin-left: 2vw;
+}
+.companyUl p{
+  margin-left: 2vw;
+}
+
+/* Experience Map */
+.map{
+  height: 300px;
+}
+/* Map Marker and Popup */
+#marker1, #marker2 {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #6aaeae;
+  border-radius: 5px;
+  background-color: #4e5db6;
+}
+.popup{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  position: absolute;
+  background-color: #80b782;
+  padding: 5px;
+  padding-top: 0px;
+  bottom: 6px;
+  left: -41px;
+  min-width: 30px;
+}
+#popup2{
+  left: -50px;
+  min-width: 58px;
+}
+#popup1 a, #popup2 a{
+  font-weight: 500;
+  color: white;
+  vertical-align: 6px;
+}
+
+
+/*---------------------------------------------------------------------------*/
+@media screen and (max-width: 900px) {
+  .mid {
+    width: 650px;
+  }
+
+  .mid #me {
+    clip-path: polygon(0 0, 93% 0, 59% 100%, 0% 100%);
+  }
+
+  .mid #line {
+    display: none;
+  }
+
+  .mid #intro_text {
+    margin-inline-start: 1%;
+    margin-inline-end: 10%;
+  }
+}
+
+/*---------------------------------------------------------------------------*/
+@media screen and (max-width: 700px) {
+  .mid{
+    display:block;
+    width: 450px;
+  }
+  .mid #me{
+    position: absolute;
+    clip-path: none;
+    /* Center */
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    /* Attribute */
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    margin-bottom: 150px;
+  }
+  .mid #intro_text{
+    margin: 0 auto;
+  }
 }
