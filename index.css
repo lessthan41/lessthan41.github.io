@@ -49,7 +49,6 @@
   display: flex;
   background-color: #3f8848;
   width: 800px;
-  width: 800px;
   height: 330px;
   margin: auto;
   margin-top: 15vh;
@@ -211,11 +210,11 @@ figcaption p {
 
 /* Skill Intro */
 #skillIntro1 {
-  margin-top: 5vh;
-  /* margin-left: 4vw; */
+  margin-top: 10vh;
 }
 
 #skillIntro2 {
+  margin-top: 10vh;
   margin-left: 1vw;
   margin-right: 2vw;
 }
@@ -227,6 +226,7 @@ figcaption p {
 
 .skillIntro ul {
   margin-bottom: 5vh;
+  list-style: none;
 }
 
 .skillIntro p {
@@ -310,7 +310,49 @@ figcaption p {
   vertical-align: 6px;
 }
 
+/* Interest */
+.card{
+  box-shadow: 0.5px 0.5px 4px #cdbaba;
+}
+.interest{
+  display: flex;
+}
+#interestImg1{
+  margin-left: 0px;
+  margin-right: auto;
+  background-image: url(./image/guitar.jpg);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+#interestImg2{
+  margin-right: 0px;
+  margin-left: auto;
+  background-image: url(./image/IU.jpg);
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.interestImg{
+  height: 236px;
+  width: 426px;
+  background-size: 100%;
+  background-repeat-y: no-repeat;
+  overflow-x: hidden;
+}
+.comment{
+  display: none;
+}
 
+/* .image img:hover {
+  transition:
+} */
+/* ------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+  .interest{
+    height: 236px;
+  }
+  .interestImg{
+    height: 250px;
+    width: 355px;
+  }
+}
 /*---------------------------------------------------------------------------*/
 @media screen and (max-width: 900px) {
   .mid {
