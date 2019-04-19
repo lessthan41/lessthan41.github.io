@@ -314,9 +314,10 @@ figcaption p {
 .card{
   box-shadow: 0.5px 0.5px 4px #cdbaba;
 }
-.interest{
+.interestRow{
   display: flex;
 }
+/* Interest Img */
 #interestImg1{
   margin-left: 0px;
   margin-right: auto;
@@ -329,6 +330,12 @@ figcaption p {
   background-image: url(./image/IU.jpg);
   clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
+#interestImg3{
+  margin-right: 0px;
+  margin-left: auto;
+  background-image: url(./image/games.png);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
+}
 .interestImg{
   height: 236px;
   width: 426px;
@@ -336,16 +343,50 @@ figcaption p {
   background-repeat-y: no-repeat;
   overflow-x: hidden;
 }
-.comment{
-  display: none;
+/* Interest Text Position */
+.interestText{
+  /* Independent Center */
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  /* Text Center */
+  text-align: center;
+}
+#interestText1{
+  right: 0;
+  padding-left: 8.5%;
+  padding-right: 5%;
+}
+#interestText2, #interestText3{
+  left: 0;
+  padding-left: 5%;
+  padding-right: 8.5%;
 }
 
-/* .image img:hover {
-  transition:
-} */
+/* Interest Title */
+.interestText h5{
+  margin-top: 20%;
+  margin-bottom: 9%;
+  color: #217324;
+  font-size: x-large;
+  font-weight: 500;
+}
+/* Interest Content */
+.interestText span{
+  color: grey;
+  font-size: small;
+  text-align: left;
+}
+.interestText p{
+  margin-top: 5%;
+  font-size: smaller;
+}
+
 /* ------------------------------------------------------------------------- */
+/* Interest Img */
 @media screen and (max-width: 1200px) {
-  .interest{
+  .interestRow{
     height: 236px;
   }
   .interestImg{
@@ -353,6 +394,28 @@ figcaption p {
     width: 355px;
   }
 }
+@media screen and (max-width: 991px) {
+  .interestRow{
+    height: 170px;
+  }
+  .interestImg{
+    height: 250px;
+    width: 255px;
+  }
+  .interestText h5{
+    margin-bottom: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .interestRow{
+    height: 121px;
+  }
+  .interestImg{
+    height: 250px;
+    width: 182px;
+  }
+}
+
 /*---------------------------------------------------------------------------*/
 @media screen and (max-width: 900px) {
   .mid {
