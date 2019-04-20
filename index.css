@@ -36,11 +36,76 @@
 .flow {
   display: flex;
 }
+/* ---------------------------------------------------------------------------- */
+/* Side Navbar */
+#navicon{
+  position: fixed;
+  margin-left: 35px;
+  margin-top: 30px;
+  z-index: 1;
+  color: #5dcc61;
+  border-style: solid;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#navicon:hover{
+  background-color: rgba(175, 235, 178, 0.5);
+  transition: .25s;
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed;
+  z-index: 3;
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #eaeaea;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
+  transition: 0.5s;
+  box-shadow: 1px 1px 4px #adb1a9
+}
 
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 73px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #6d6363;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #cbcfd0;
+}
+
+#fish{
+  top: 10px;
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* ---------------------------------------------------------------------------- */
 /* Intro div */
 .mid {
   position: absolute;
-  z-index: 20;
+  z-index: 2;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -139,6 +204,7 @@
   border-color: white;
   border-bottom-width: 40px;
 }
+/* ---------------------------------------------------------------------------- */
 
 /* Bottom Title */
 .bottom .title {
