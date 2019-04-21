@@ -87,8 +87,8 @@ var config = {
       duration: 3000
     }
   }
-  // -----------------------------------------
 };
+
 
 // -------------------------------------------
 
@@ -119,4 +119,11 @@ $(window).scroll(function(){
     replot();
     plotIndex = false;
   }
+});
+
+// if window resize replot
+$(window).resize(function(){
+    chart.destroy();
+    config["options"]["animation"]["duration"] = 0;
+    replot();
 })

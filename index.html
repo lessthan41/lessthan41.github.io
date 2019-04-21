@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <!-- use device width as webpage's width -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <!-- Compatible ie=edge -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Bootstrap's CSS -->
@@ -80,7 +80,7 @@
       <div class="inner innerFirst container"><br><br>
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-9 title"><i class="fas fa-user"></i> About Me</div>
+          <div class="col-9 title" id=AboutMe><i class="fas fa-user"></i> About Me</div>
         </div>
         <div class="row text">
           <div class="col-2"></div>
@@ -112,9 +112,9 @@
           <div class="col-2"></div>
         </div>
 
-        <div class="row">
+        <div class="row skillRow" id=skillRow1>
           <div class="col-2"></div>
-          <div class="col-4 flow carouselDiv">
+          <div class="col-4 flow carouselDiv" id=carouselDiv1>
             <!-- Carousel -->
             <div id="carousel1" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
@@ -162,7 +162,7 @@
             </div>
           </div>
 
-          <div class="col-4">
+          <div class="col-4" id=skillTxt>
             <!-- Python intro -->
             <div class="skillIntro" id=skillIntro1>
               <h4>Python</h4>
@@ -187,13 +187,13 @@
           <div class="col-2"></div>
         </div>
 
-        <div class="row">
+        <div class="row skillRow" id=skillRow2>
           <div class="col-2"></div>
           <div class="col-4">
 
             <!-- Python intro -->
+            <div id=forInsertTxt style="display: none;"></div>
             <div class="skillIntro" id=skillIntro2>
-
               <h4>ArcMap</h4>
               <ul>
                 <li>Shapefile Process, Network Analysis, Intesection, Buffer et cetera.</li>
@@ -207,8 +207,10 @@
                 <li>On Learning, Looking Foward to Software Development.</li>
               </ul>
             </div>
+
           </div>
-          <div class="col-4  flow carouselDiv">
+          <div class="col-4 flow carouselDiv" id=carouselDiv2>
+            <div id=forInsertImg style="display: none;"></div>
             <!-- Carousel -->
             <div id="carousel2" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
@@ -247,7 +249,6 @@
               </a>
             </div>
 
-
           </div>
           <div class="col-2"></div>
         </div>
@@ -257,11 +258,11 @@
       <div class="inner container"><br><br>
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-9 title"><img src="./image/education.png" alt="experience" class="titleImg"> Education</div>
+          <div class="col-9 title" id=Education><img src="./image/education.png" alt="experience" class="titleImg"> Education</div>
         </div>
         <div class="row text">
           <div class="col-3"></div>
-          <div class="col-7">
+          <div class="col-8">
 
             <span class="year">2017</span>
             <div class="flow">
@@ -334,16 +335,16 @@
             </div>
 
           </div>
-          <div class="col-3"></div>
+          <div class="col-1"></div>
         </div>
       </div>
       <!------------------------------------------>
       <div class="inner container"><br><br>
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-9 title"><img src="./image/experience.png" alt="experience" class="titleImg"> Experience</div>
+          <div class="col-9 title" id=Experience><img src="./image/experience.png" alt="experience" class="titleImg"> Experience</div>
         </div>
-        <div class="row text">
+        <div class="row text expDiv">
           <div class="col-2"></div>
           <div class="col-4">
             <!-- Exp Company -->
@@ -356,7 +357,7 @@
               <li class="workdate">
                 <span>2017 Jun. ~ 2017 Jul.</span>
               </li>
-              <p>Learning about how camera works, <br>resolution and some application.</p><br>
+              <p>Learning about how camera works, resolution and some application.</p><br>
               <li>
                 <a href="https://www.1111.com.tw/corp/67712337/" target="_blank">
                   <h5>Yu-Zhi Co., Ltd (Summer Intern)</h5>
@@ -365,7 +366,7 @@
               <li class="workdate">
                 <span>2018 Jun. ~ 2018 Jul.</span>
               </li>
-              <p>Learning about how Geography is<br> utilized in the reality.</p>
+              <p>Learning about how Geography is utilized in the reality.</p>
             </ul>
           </div>
           <div class="col-5">
@@ -384,9 +385,9 @@
       <div class="inner container"><br><br>
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-9 title"><i class="fas fa-music"></i> Interest</div>
+          <div class="col-9 title" id=Interest><i class="fas fa-music"></i> Interest</div>
         </div>
-        <div class="row text">
+        <div class="row text" id=interestDiv>
           <div class="col-2"></div>
           <div class="col-8">
 
@@ -395,18 +396,19 @@
                 <div class="interestImg" id=interestImg1></div>
                 <div class="interestText" id=interestText1>
                   <h5>Guitar</h5>
-                  <span>My favorite one ,<br> especially Fingerstyle.<br><br>
-                    Idol: &nbsp;<a href="http://www.sunghajung.com/" target="_blank">Sungha Jung</a></span>
+                  <div class="interestDetail"><span>My favorite one ,<br> especially Fingerstyle.</span></div>
+                    <div class="idol"><span class="idolWord">Idol: &nbsp;</span><span><a href="http://www.sunghajung.com/" target="_blank">Sungha Jung</a></span></div>
                 </div>
               </div>
 
               <div class="interestRow">
                 <div class="interestText" id=interestText2>
                   <h5>K-Pop</h5>
-                  <span>Life is Music !<br><br>
-                    Idol:&nbsp;
-                    <a href="https://zh.wikipedia.org/wiki/%E5%A4%AA%E5%A6%8D" target="_blank">TaeYeon (태연)</a> ,<br>&nbsp;
+                  <div class="interestDetail"><span>Life is Music !</span><br></div>
+                  <div class="idol"><span class="idolWord">Idol:&nbsp;</span><span>
+                    <a href="https://zh.wikipedia.org/wiki/%E5%A4%AA%E5%A6%8D" target="_blank">TaeYeon (태연)</a> <i id=comma>,</i><br>&nbsp;
                     <a href="https://zh.wikipedia.org/wiki/IU_(%E8%89%BA%E4%BA%BA)" target="_blank">IU (이지은)</a></span>
+                  </div>
                 </div>
                 <div class="interestImg" id=interestImg2></div>
               </div>
@@ -421,7 +423,7 @@
       <div class="inner innerLast container"><br><br>
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-9 title"><img src="./image/homework.png" alt="homework" class="titleImg"> Homework</div>
+          <div class="col-9 title" id=Homework><img src="./image/homework.png" alt="homework" class="titleImg"> Homework</div>
         </div>
         <div class="row text">
           <div class="col-3"></div>

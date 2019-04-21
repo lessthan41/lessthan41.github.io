@@ -42,7 +42,7 @@
   position: fixed;
   margin-left: 35px;
   margin-top: 30px;
-  z-index: 1;
+  z-index: 2;
   color: #5dcc61;
   border-style: solid;
   padding: 6px;
@@ -53,6 +53,7 @@
   background-color: rgba(175, 235, 178, 0.5);
   transition: .25s;
 }
+
 /* The side navigation menu */
 .sidenav {
   height: 100%;
@@ -89,6 +90,13 @@
   font-size: xx-large;
   margin-bottom: 30px;
 }
+.fa-fish{
+  border-style: solid;
+  padding: 7px;
+  border-color: #3b4249;
+  color: #3b4249;
+  border-width: 5px;
+}
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -105,7 +113,7 @@
 /* Intro div */
 .mid {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -240,13 +248,12 @@
 }
 
 /* Skill Img */
-#carousel1{
-  width: 330px;
+.skillRow{
   margin-top: 20px;
 }
-
-#carousel2{
+#carousel1, #carousel2{
   width: 330px;
+  margin: 2px;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -256,12 +263,11 @@
 
 .carouselDiv {
   height: 470px;
-  margin-bottom: 7vh;
+  margin-bottom: 20px;
 }
 
 .figure{
   padding: 8px;
-  height: 450px;
   background-color: #e8eae5;
 }
 
@@ -276,13 +282,14 @@ figcaption p {
 
 /* Skill Intro */
 #skillIntro1 {
-  margin-top: 10vh;
+  margin-top: 30px;
+  width: 330px;
 }
 
 #skillIntro2 {
-  margin-top: 10vh;
-  margin-left: 1vw;
-  margin-right: 2vw;
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-right: 10px;
 }
 
 .skillIntro h4 {
@@ -433,9 +440,8 @@ figcaption p {
 /* Interest Title */
 .interestText h5{
   margin-top: 20%;
-  margin-bottom: 9%;
   color: #217324;
-  font-size: x-large;
+  font-size: 2em;
   font-weight: 500;
 }
 /* Interest Content */
@@ -448,41 +454,179 @@ figcaption p {
   margin-top: 5%;
   font-size: smaller;
 }
-
-/* ------------------------------------------------------------------------- */
-/* Interest Img */
-@media screen and (max-width: 1200px) {
-  .interestRow{
-    height: 236px;
-  }
-  .interestImg{
-    height: 250px;
-    width: 355px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .interestRow{
-    height: 170px;
-  }
-  .interestImg{
-    height: 250px;
-    width: 255px;
-  }
-  .interestText h5{
-    margin-bottom: 3%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .interestRow{
-    height: 121px;
-  }
-  .interestImg{
-    height: 250px;
-    width: 182px;
-  }
+.idol{
+  margin-top: 2vw;
 }
 
 /*---------------------------------------------------------------------------*/
+/* All */
+@media screen and (max-width: 991px) {
+  .col-2{
+    max-width: 8%;
+    flex: none;
+  }
+  .col-3{
+    max-width: 16%;
+    flex: none;
+  }
+  .col-4{
+    max-width: 42%;
+    flex: none;
+    margin: auto;
+  }
+  .col-8{
+    max-width: 84%;
+    flex: none;
+    margin: auto;
+  }
+  .inner{
+    max-width: 93%;
+  }
+  h4{
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  .col-2{
+    max-width: 4%;
+  }
+  .col-3{
+    max-width: 8%;
+  }
+  .col-4{
+    max-width: 42%;
+  }
+  .col-8{
+    max-width: 92%;
+  }
+  h5{
+    font-size: 1rem;
+  }
+}
+/*---------------------------------------------------------------------------*/
+/* Skill */
+@media screen and (max-width: 1200px) {
+  .carouselDiv{
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 852px) {
+  .skillRow .col-2{
+    display: none;
+  }
+  .skillRow .col-4{
+    max-width: 90%;
+    margin: auto;
+    height: auto;
+  }
+  #interestTxt{
+    display: flex;
+  }
+  #skillIntro1 {
+    width: 77vw;
+  }
+  #skillIntro2 {
+    /* width: 77vw; */
+    margin-top: 30px;
+    width: 60vw;
+  }
+  .skillIntro h4, .skillIntro ul {
+    margin-left: 18vw;
+  }
+  .carousel{
+    width: 37vw;
+  }
+  .carousel figcaption{
+    font-size: 0.8rem;
+  }
+   #skillRow2{
+     display: none;
+   }
+}
+@media screen and (max-width: 743px) {
+  .carousel figcaption{
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 710px) {
+  #carouselDiv1{
+    height: auto;
+  }
+  #skillIntro1{
+    margin-top: 3vw;
+  }
+  .skillIntro ul, .skillIntro h4{
+    margin-left: 14vw;
+  }
+  #skillTxt {
+    display: block;
+  }
+}
+@media screen and (max-width: 670px) {
+  .skillRow .col-4{
+    max-width: 100%;
+    /* margin: auto; */
+  }
+  .figure{
+    height: 57vw;
+    width: 42vw;
+  }
+}
+@media screen and (max-width: 571px) {
+  .figure{
+    height: 62vw;
+  }
+}
+@media screen and (max-width: 440px) {
+  .figure{
+    height: 65vw;
+  }
+  #interestTxt ul, #interestTxt h4{
+    margin-left: 5vw;
+    width: 100%;
+  }
+  /* Remove Limit */
+  #skillIntro2 {
+    width: unset;
+  }
+}
+/*---------------------------------------------------------------------------*/
+/* Experience */
+@media screen and (max-width: 836px) {
+  .expDiv{
+    display: block;
+  }
+  .expDiv .col-4{
+    margin: auto;
+    max-width: 95%;
+    flex: none;
+  }
+  .expDiv .col-5{
+    max-width: 80%;
+    flex: none;
+    margin: auto;
+    margin-top: 5vh;
+    flex: none;
+  }
+  .expDiv ul{
+    margin-left: 18vw;
+  }
+
+  #map{
+    width: 60vw;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 690px) {
+  .expDiv ul{
+    margin-left: 10vw;
+  }
+  .map{
+    height: 200px;
+  }
+}
+/*---------------------------------------------------------------------------*/
+/* Mid */
 @media screen and (max-width: 900px) {
   .mid {
     width: 650px;
@@ -502,27 +646,114 @@ figcaption p {
   }
 }
 
-/*---------------------------------------------------------------------------*/
 @media screen and (max-width: 700px) {
   .mid{
     display:block;
     width: 450px;
+    height: 367px;
   }
   .mid #me{
     position: absolute;
+    margin-top: -86px;
     clip-path: none;
-    /* Center */
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    /* Attribute */
     width: 180px;
     height: 180px;
     border-radius: 100%;
     margin-bottom: 150px;
+    box-shadow: 1px 1px 8px #5bc668;
   }
   .mid #intro_text{
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 94px;
+  }
+  .mid #btnDiv{
+    margin-left: 0px;
+  }
+  .mid ul{
+    text-align: left;
+    margin-left: 83px;
+  }
+  .innerFirst {
+    margin-top: 188px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mid{
+    display:block;
+    width: 379px;
+    height: 367px;
+  }
+  .mid ul {
+    margin-left: 48px;
+  }
+}
+/* ------------------------------------------------------------------------- */
+/* Interest */
+@media screen and (max-width: 1200px) {
+  .interestRow{
+    height: 236px;
+  }
+  .interestImg{
+    height: 250px;
+    width: 355px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .interestRow{
+    height: auto;
+  }
+  .interestImg{
+    width: calc(58% + 5px);
+    height: 28vw;
+  }
+  .interestText h5{
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 670px) {
+  #interestDiv .col-2{
+      display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .interestImg{
+    width: calc(57% + 6px);
+  }
+}
+@media screen and (max-width: 470px) {
+  .idol{
+    margin-top: 0px;
+  }
+  .interestText h5{
+    font-size: 3vw;
+    margin-bottom: unset;
+  }
+  .interestText span{
+    font-size: 2.5vw;
+  }
+  .idol{
+    margin-top: 4vw;
+  }
+  .idolWord, #comma, .interestDetail{
+    display: none;
+  }
+}
+@media screen and (max-width: 300px) {
+  .interestRow{
+    height: auto;
+  }
+  .interestImg{
+    width: 40vw;
+    height: 26vw;
+  }
+  .idol {
+      margin-top: unset;
+      margin-bottom: 2vw;
   }
 }
