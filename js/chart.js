@@ -25,11 +25,18 @@ var labels = [
 ];
 
 // Options
-var label = function(tooltipItem) {
-  var char = tooltipItem.xLabel + "%";
-  return char;
+if($(window).width() < 574){
+  var label = function(tooltipItem) {
+    var char = tooltipItem.yLabel + '%';
+    return char;
+  }
 }
-
+else{
+  var label = function(tooltipItem) {
+    var char = tooltipItem.xLabel + '%';
+    return char;
+  }
+}
 // -----------------------------------------
 var config = {
   type: 'horizontalBar',
@@ -48,8 +55,8 @@ var config = {
       callbacks: {
         label: label
       },
-      yAlign: "center",
-      xAlign: "left"
+      yAlign: 'center',
+      xAlign: 'left'
     },
 
     // Canvas Padding
@@ -68,7 +75,7 @@ var config = {
         // x-axis Name
         scaleLabel: {
           display: true,
-          labelString: "Percentage(%)",
+          labelString: 'Percentage(%)',
           fontSize: 13
         },
         ticks:{
@@ -89,6 +96,25 @@ var config = {
   }
 };
 
+if($(window).width() < 574){
+  config['type'] = 'bar';
+  config['options']['tooltips']['yAlign'] = 'top';
+  config['options']['tooltips']['xAlign'] = 'center';
+  config['options']['scales']['xAxes'][0]['ticks']['fontSize'] = 7;
+  config['options']['scales']['xAxes'][0]['scaleLabel']['display'] = false;
+  config['options']['scales']['yAxes'] = [{
+    // y-axis Name
+    scaleLabel: {
+      display: true,
+      labelString: 'Percentage(%)',
+      fontSize: 13
+    },
+    ticks:{
+      min: 0,
+      max: 100,
+    }
+  }]
+}
 
 // -------------------------------------------
 
@@ -124,6 +150,6 @@ $(window).scroll(function(){
 // if window resize replot
 $(window).resize(function(){
     chart.destroy();
-    config["options"]["animation"]["duration"] = 0;
+    config['options']['animation']['duration'] = 0;
     replot();
 })

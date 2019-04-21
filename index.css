@@ -505,6 +505,86 @@ figcaption p {
   }
 }
 /*---------------------------------------------------------------------------*/
+/* Mid */
+@media screen and (max-width: 900px) {
+  .mid {
+    width: 650px;
+  }
+
+  .mid #me {
+    clip-path: polygon(0 0, 93% 0, 59% 100%, 0% 100%);
+  }
+
+  .mid #line {
+    display: none;
+  }
+
+  .mid #intro_text {
+    margin-inline-start: 1%;
+    margin-inline-end: 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mid{
+    display:block;
+    width: 450px;
+    height: 367px;
+  }
+  .mid #me{
+    position: absolute;
+    margin-top: -86px;
+    clip-path: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    margin-bottom: 150px;
+    box-shadow: 1px 1px 8px #5bc668;
+  }
+  .mid #intro_text{
+    width: 100%;
+    text-align: center;
+    margin-top: 103px;
+  }
+  .mid #btnDiv{
+    margin-left: 0px;
+  }
+  .mid ul{
+    text-align: left;
+    margin-left: 83px;
+  }
+  .innerFirst {
+    margin-top: 188px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mid{
+    display:block;
+    width: 327px;
+    height: 373px;
+  }
+  .mid ul {
+    margin-left: 24px;
+  }
+}
+/* For iPhone 5 */
+@media screen and (max-width: 325px) {
+  .mid{
+    width: 294px;
+  }
+  .innerFirst {
+    margin-top: 226px;
+  }
+  .innerLast .col-3 {
+    display: none;
+  }
+}
+/*---------------------------------------------------------------------------*/
 /* Skill */
 @media screen and (max-width: 1200px) {
   .carouselDiv{
@@ -519,6 +599,14 @@ figcaption p {
     max-width: 90%;
     margin: auto;
     height: auto;
+  }
+  .skillRow .col-4{
+    max-width: 90%;
+    margin: auto;
+    height: auto;
+  }
+  #chartRow .col-8{
+    max-width: 100%;
   }
   #interestTxt{
     display: flex;
@@ -588,7 +676,16 @@ figcaption p {
   }
   /* Remove Limit */
   #skillIntro2 {
-    width: unset;
+    width: 77vw;
+  }
+}
+/*---------------------------------------------------------------------------*/
+/* Education */
+@media screen and (max-width: 1025px) {
+  .year{
+    font-family: unset;
+    font-size: x-large;
+    margin-left: 5px;
   }
 }
 /*---------------------------------------------------------------------------*/
@@ -603,7 +700,7 @@ figcaption p {
     flex: none;
   }
   .expDiv .col-5{
-    max-width: 80%;
+    max-width: 100%;
     flex: none;
     margin: auto;
     margin-top: 5vh;
@@ -614,7 +711,7 @@ figcaption p {
   }
 
   #map{
-    width: 60vw;
+    width: 80vw;
     margin: auto;
   }
 }
@@ -626,74 +723,7 @@ figcaption p {
     height: 200px;
   }
 }
-/*---------------------------------------------------------------------------*/
-/* Mid */
-@media screen and (max-width: 900px) {
-  .mid {
-    width: 650px;
-  }
 
-  .mid #me {
-    clip-path: polygon(0 0, 93% 0, 59% 100%, 0% 100%);
-  }
-
-  .mid #line {
-    display: none;
-  }
-
-  .mid #intro_text {
-    margin-inline-start: 1%;
-    margin-inline-end: 10%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .mid{
-    display:block;
-    width: 450px;
-    height: 367px;
-  }
-  .mid #me{
-    position: absolute;
-    margin-top: -86px;
-    clip-path: none;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    width: 180px;
-    height: 180px;
-    border-radius: 100%;
-    margin-bottom: 150px;
-    box-shadow: 1px 1px 8px #5bc668;
-  }
-  .mid #intro_text{
-    width: 100%;
-    text-align: center;
-    margin-top: 94px;
-  }
-  .mid #btnDiv{
-    margin-left: 0px;
-  }
-  .mid ul{
-    text-align: left;
-    margin-left: 83px;
-  }
-  .innerFirst {
-    margin-top: 188px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .mid{
-    display:block;
-    width: 379px;
-    height: 367px;
-  }
-  .mid ul {
-    margin-left: 48px;
-  }
-}
 /* ------------------------------------------------------------------------- */
 /* Interest */
 @media screen and (max-width: 1200px) {
@@ -724,7 +754,7 @@ figcaption p {
 }
 @media screen and (max-width: 600px) {
   .interestImg{
-    width: calc(57% + 6px);
+    width: calc(57% + 8px);
   }
 }
 @media screen and (max-width: 470px) {
@@ -744,13 +774,16 @@ figcaption p {
   .idolWord, #comma, .interestDetail{
     display: none;
   }
+  .interestImg{
+    width: calc(57% + 6px);
+  }
 }
 @media screen and (max-width: 300px) {
   .interestRow{
     height: auto;
   }
   .interestImg{
-    width: 40vw;
+    width: calc(57% + 4px);
     height: 26vw;
   }
   .idol {
