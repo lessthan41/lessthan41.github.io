@@ -505,6 +505,13 @@ figcaption p {
     font-size: 1rem;
   }
 }
+/* If device is phone */
+@media (pointer:none), (pointer:coarse) {
+  #name{
+    font-family: unset;
+    letter-spacing: 0px;
+  }
+}
 /*---------------------------------------------------------------------------*/
 /* Mid */
 @media screen and (max-width: 900px) {
