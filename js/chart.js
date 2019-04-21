@@ -98,8 +98,9 @@ var config = {
 
 if($(window).width() < 574){
   config['type'] = 'bar';
-  config['options']['tooltips']['yAlign'] = 'top';
+  config['options']['tooltips']['yAlign'] = 'bottom';
   config['options']['tooltips']['xAlign'] = 'center';
+  config['options']['layout']['padding'] = {top: 40}
   config['options']['scales']['xAxes'][0]['ticks']['fontSize'] = 7;
   config['options']['scales']['xAxes'][0]['scaleLabel']['display'] = false;
   config['options']['scales']['yAxes'] = [{

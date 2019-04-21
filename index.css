@@ -679,6 +679,9 @@ figcaption p {
   .figure{
     height: 62vw;
   }
+  canvas{
+    height: 140px;
+  }
 }
 @media screen and (max-width: 440px) {
   .figure{
