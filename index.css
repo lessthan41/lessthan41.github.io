@@ -510,15 +510,12 @@ figcaption p {
   .mid {
     width: 650px;
   }
-
   .mid #me {
     clip-path: polygon(0 0, 93% 0, 59% 100%, 0% 100%);
   }
-
   .mid #line {
     display: none;
   }
-
   .mid #intro_text {
     margin-inline-start: 1%;
     margin-inline-end: 10%;
@@ -527,9 +524,9 @@ figcaption p {
 
 @media screen and (max-width: 700px) {
   .mid{
-    display:block;
-    width: 450px;
-    height: 367px;
+    display: block;
+    width: 515px;
+    height: 380px;
   }
   .mid #me{
     position: absolute;
@@ -555,27 +552,43 @@ figcaption p {
   }
   .mid ul{
     text-align: left;
-    margin-left: 83px;
+    margin-left: 111px;
   }
   .innerFirst {
     margin-top: 188px;
   }
 }
-
+@media screen and (max-width: 580px) {
+  .mid{
+    width: 450px;
+  }
+  .mid ul{
+    margin-left: 83px;
+  }
+}
 @media screen and (max-width: 500px) {
   .mid{
-    display:block;
-    width: 327px;
-    height: 373px;
+    width: 380px;
+  }
+  .mid ul {
+    margin-left: 48px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mid{
+    width: 330px;
   }
   .mid ul {
     margin-left: 24px;
   }
 }
 /* For iPhone 5 */
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 370px) {
   .mid{
     width: 294px;
+  }
+  .mid ul {
+    margin-left: 9px;
   }
   .innerFirst {
     margin-top: 226px;
@@ -771,7 +784,7 @@ figcaption p {
   .idol{
     margin-top: 4vw;
   }
-  .idolWord, #comma, .interestDetail{
+  .interestDetail{
     display: none;
   }
   .interestImg{
