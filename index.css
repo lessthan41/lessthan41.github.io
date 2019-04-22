@@ -1,3 +1,45 @@
+/* Onload */
+.spinner-grow{
+  z-index: 5;
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#loadingWord{
+  z-index: 5;
+  position: fixed;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: x-large;
+  font-weight: 600;
+  text-align: center;
+  line-height: 47px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 39vh;
+  opacity: 0;
+  transition: .5s;
+}
+#loadingWord span{
+  text-shadow: 1px 1px 4px #274526;
+}
+#drawBgcolor{
+  z-index: 4;
+  position: fixed;
+  background-color: #2b8a37;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  transition: 1s;
+}
+/* All */
 .top {
   height: 50vh;
   width: 100%;
@@ -65,7 +107,7 @@
   background-color: #eaeaea;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px;
-  transition: 0.5s;
+  transition: .75s;
   box-shadow: 1px 1px 4px #adb1a9
 }
 
@@ -426,13 +468,14 @@ figcaption p {
   margin: auto;
   /* Text Center */
   text-align: center;
+  line-height: 1.5;
 }
 #interestText1{
   right: 0;
   padding-left: 8.5%;
   padding-right: 5%;
 }
-#interestText2, #interestText3{
+#interestText2{
   left: 0;
   padding-left: 5%;
   padding-right: 8.5%;
@@ -441,6 +484,7 @@ figcaption p {
 /* Interest Title */
 .interestText h5{
   margin-top: 20%;
+  margin-bottom: 5%;
   color: #217324;
   font-size: 2em;
   font-weight: 500;
@@ -448,7 +492,7 @@ figcaption p {
 /* Interest Content */
 .interestText span{
   color: grey;
-  font-size: small;
+  font-size: .9rem;
   text-align: left;
 }
 .interestText p{
@@ -456,7 +500,7 @@ figcaption p {
   font-size: smaller;
 }
 .idol{
-  margin-top: 2vw;
+  margin-top: 30px;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -505,13 +549,7 @@ figcaption p {
     font-size: 1rem;
   }
 }
-/* If device is phone */
-@media (pointer:none), (pointer:coarse) {
-  #name{
-    font-family: unset;
-    letter-spacing: 0px;
-  }
-}
+
 /*---------------------------------------------------------------------------*/
 /* Mid */
 @media screen and (max-width: 900px) {
@@ -758,6 +796,9 @@ figcaption p {
     height: 250px;
     width: 355px;
   }
+  .interestRow span{
+    font-size: .9rem;
+  }
 }
 @media screen and (max-width: 991px) {
   .interestRow{
@@ -767,18 +808,39 @@ figcaption p {
     width: calc(58% + 5px);
     height: 28vw;
   }
+  .interestDetail{
+    margin-top: 5vh;
+  }
+  .interestText{
+    line-height: 1.25;
+  }
   .interestText h5{
-    font-size: 3vw;
+    font-size: 4vw;
+  }
+  .idol{
+    margin-top: 4vw;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .interestDetail{
+    margin-top: 2vw;
   }
 }
 @media screen and (max-width: 670px) {
   #interestDiv .col-2{
       display: none;
   }
+  .idol{
+    margin-top: 2vw;
+  }
 }
 @media screen and (max-width: 600px) {
   .interestImg{
     width: calc(57% + 8px);
+  }
+  .interestDetail span, .idol span{
+    font-size: .7rem;
   }
 }
 @media screen and (max-width: 470px) {
@@ -786,11 +848,8 @@ figcaption p {
     margin-top: 0px;
   }
   .interestText h5{
-    font-size: 3vw;
+    font-size: 4vw;
     margin-bottom: unset;
-  }
-  .interestText span{
-    font-size: 2.5vw;
   }
   .idol{
     margin-top: 4vw;

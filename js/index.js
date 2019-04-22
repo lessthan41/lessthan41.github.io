@@ -1,13 +1,57 @@
+
+// Onload
+$(function(){
+  // Name Fade in
+  document.getElementById("loadingWord").style.opacity = 1;
+  document.getElementById("loadingWord").style.marginTop = "40vh";
+
+  var img = new Image();
+  img.src = './image/bgimage.jpg'; // find load longest Img
+  img.onload = function() {
+
+    setTimeout(function(){
+      // Name Fade Out
+     document.getElementById("loadingWord").style.opacity = 0;
+     document.getElementById("loadingWord").style.marginTop = "39vh";
+
+
+      // BGDiv
+      document.getElementById("drawBgcolor").style.backgroundColor = 'rgba(0, 128, 0, 0)';
+      $('.spinner-grow').hide();
+
+      setTimeout(function(){
+        $('#drawBgcolor').css('display','none');
+        $('#loadingWord').hide();
+      }, 600);
+
+    }, 1000);
+
+  }
+})
+
 // ------------------------------------------------------------------
 // Nav Bar
 /* Set the width of the side navigation to 250px */
+var navOpen, navClose = false;
+
+
 function openNav() {
+  if(navClose == true){
+    return;
+  }
+  navOpen = true;
   document.getElementById('mySidenav').style.width = '250px';
+  setTimeout( function(){navOpen = false;}, 200);
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
+  if(navOpen == true){
+    return;
+  }
+  navClose = true;
   document.getElementById('mySidenav').style.width = '0';
+  setTimeout( function(){navClose = false;}, 200);
 }
 
 function getheight(height) {
@@ -39,6 +83,17 @@ $('.sidenav a').on('click', function(){
     window.scrollTo({top: getheight($('#Homework').offset()['top']), behavior: 'smooth'});
   }
 })
+
+// Hover Open & Close
+$('#navicon').hover(function(){
+  setTimeout(function(){ openNav(); }, 150);
+  $('#mySidenav').mouseleave(function(){ closeNav(); });
+  $('.top').on( "mouseover", function(){ closeNav(); });
+  $('.mid').on( "mouseover", function(){ closeNav(); });
+  $('.bottom').on( "mouseover", function(){ closeNav(); });
+});
+
+
 // -------------------------------------------------------------------------
 // For RWD change order of Carousel
 $(document).ready(function(){
