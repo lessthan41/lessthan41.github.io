@@ -12,6 +12,7 @@
   bottom: 0;
 }
 #loadingWord{
+  display: none;
   z-index: 5;
   position: fixed;
   color: white;
@@ -27,6 +28,7 @@
   margin-top: 39vh;
   opacity: 0;
   transition: .5s;
+  display: unset;
 }
 #loadingWord span{
   text-shadow: 1px 1px 4px #274526;
@@ -35,9 +37,9 @@
   z-index: 4;
   position: fixed;
   background-color: #2b8a37;
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
-  transition: 1s;
+  width: 100%;
+  height: 100%;
+  transition: 0s;
 }
 /* All */
 .top {
@@ -349,7 +351,7 @@ figcaption p {
   margin-left: 4vw;
 }
 
-#skillTitle {
+#Skills {
   margin-bottom: 20px;
 }
 
@@ -424,6 +426,68 @@ figcaption p {
   font-weight: 500;
   color: white;
   vertical-align: 6px;
+}
+
+/* Lab */
+#labDiv .card{
+  margin: auto;
+}
+.labImg{
+  width: 100%;
+  padding: 5px;
+  object-fit: cover;
+  background-color: aliceblue;
+}
+.labImg img{
+  width: 100%;
+}
+@keyframes labImg {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+#labImg1{
+  z-index: -1;
+  /* animation: labImg 1s linear infinite; */
+}
+.labFilter{
+  z-index:1;
+  transition: .5s;
+  position: absolute;
+  /* width: 98%;
+  height: 79%; */
+}
+.visitLab{
+  z-index: 2;
+  text-align: center;
+  margin-top: 47%;
+  font-size: x-large;
+  font-weight: 400;
+}
+.visitLab a{
+  color: white;
+}
+.visitLab a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.card-body {
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  background-color: aliceblue;
+}
+.card-body p{
+  margin-bottom: unset;
+}
+.labTime{
+  color: grey;
+  margin-left: 15px;
+  font-family: Corbel;
 }
 
 /* Interest */
@@ -601,7 +665,7 @@ figcaption p {
     margin-left: 111px;
   }
   .innerFirst {
-    margin-top: 188px;
+    margin-top: 210px;
   }
 }
 @media screen and (max-width: 580px) {
@@ -786,6 +850,31 @@ figcaption p {
   }
 }
 
+/* ------------------------------------------------------------------------- */
+/* labDiv */
+@media screen and (max-width: 900px) {
+  #labDiv{
+    display: block;
+  }
+  #labDiv .col-5{
+    margin: auto;
+    max-width: 55vw;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 725px) {
+  #labDiv .col-5{
+    max-width: 70vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-text{
+    font-size: 0.9rem;
+  }
+  .labTime{
+    font-size: 0.7rem;
+  }
+}
 /* ------------------------------------------------------------------------- */
 /* Interest */
 @media screen and (max-width: 1200px) {

@@ -16,6 +16,7 @@ $(function(){
 
 
       // BGDiv
+      document.getElementById("drawBgcolor").style.transition = '1s';
       document.getElementById("drawBgcolor").style.backgroundColor = 'rgba(0, 128, 0, 0)';
       $('.spinner-grow').hide();
 
@@ -63,25 +64,8 @@ $('.sidenav a').on('click', function(){
   var $this = $(this).html();
 
   closeNav();
+  window.scrollTo({top: getheight($('#' + $this).offset()['top']), behavior: 'smooth'});
 
-  if($this == 'AboutMe'){
-    window.scrollTo({top: getheight($('#AboutMe').offset()['top']), behavior: 'smooth'});
-  }
-  if($this == 'Skills'){
-    window.scrollTo({top: getheight($('#skillTitle').offset()['top']), behavior: 'smooth'});
-  }
-  if($this == 'Education'){
-    window.scrollTo({top: getheight($('#Education').offset()['top']), behavior: 'smooth'});
-  }
-  if($this == 'Experience'){
-    window.scrollTo({top: getheight($('#Experience').offset()['top']), behavior: 'smooth'});
-  }
-  if($this == 'Interest'){
-    window.scrollTo({top: getheight($('#Interest').offset()['top']), behavior: 'smooth'});
-  }
-  if($this == 'Homework'){
-    window.scrollTo({top: getheight($('#Homework').offset()['top']), behavior: 'smooth'});
-  }
 })
 
 // Hover Open & Close
@@ -113,3 +97,31 @@ $(window).resize(function(){
       $('#skillIntro2').insertAfter('#forInsertTxt');
   }
 })
+
+// -------------------------------------------------------------------------
+// For labImg Size
+$(function() {
+  $(".labFilter").css({
+    'width': ($(".card-img-top").width() + 'px'),
+    'height': ($(".card-img-top").height() + 'px'),
+  });
+});
+
+$(window).resize(function(){
+  $(".labFilter").css({
+    'trainsition': '0s',
+    'width': ($(".card-img-top").width() + 'px'),
+    'height': ($(".card-img-top").height() + 'px'),
+    'trainsition': '1s'
+  });
+});
+
+// For labImg hover
+var originSize;
+$('.labFilter').on( "mouseover", function(){
+  this.style.backgroundColor = "rgba(0,0,0,0.3)";
+});
+
+$('.labFilter').mouseleave(function(){
+  this.style.backgroundColor = null;
+ });
