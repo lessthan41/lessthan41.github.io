@@ -1,7 +1,7 @@
 // Data
 var datasets = [{
   data: [
-    80, 80, 70, 70, 70, 60, 60
+    80, 80, 80, 80, 70, 70, 60
   ],
   backgroundColor: [
     'rgb(238, 63, 63)', //red
@@ -15,13 +15,13 @@ var datasets = [{
 }];
 
 var labels = [
-  'Python',
   'HTML&CSS',
   'JavaScript',
   'R',
-  'ArcGIS',
-  'ENVI',
-  'JAVA'
+  'Python',
+  'ArcMap',
+  'JAVA',
+  'ENVI'
 ];
 
 // Options
@@ -91,7 +91,7 @@ var config = {
 
     // Animation Duration
     animation: {
-      duration: 3000
+      duration: 2000
     }
   }
 };

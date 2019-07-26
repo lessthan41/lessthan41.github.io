@@ -59,7 +59,7 @@ function getheight(height) {
   return height - $(window).height()/6
 }
 
-// Onclock Scroll
+// Onclick Scroll
 $('.sidenav a').on('click', function(){
   var $this = $(this).html();
 

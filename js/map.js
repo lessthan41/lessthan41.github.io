@@ -11,7 +11,7 @@ var view = new ol.View({
 var raster = new ol.layer.Tile({
       source: new ol.source.XYZ({
         crossOrigin: 'anonymous',
-        url: 'https://mt{0-3}.google.com/vt/lyrs=r&x={x}&y={y}&z={z}',
+        url: 'http://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
       })
     })
 
