@@ -62,7 +62,7 @@ function getheight(height) {
 // Onclick Scroll
 $('.sidenav a').on('click', function(){
   var $this = $(this).html();
-
+  
   closeNav();
   window.scrollTo({top: getheight($('#' + $this).offset()['top']), behavior: 'smooth'});
 

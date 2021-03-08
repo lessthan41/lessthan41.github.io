@@ -2,531 +2,603 @@
 <html lang="zh-TW" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <!-- use device width as webpage's width -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <!-- Compatible ie=edge -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Bootstrap's CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- FontAwesome's CSS -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <!-- OpenLayers's CSS -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
-  <!-- import CSS -->
-  <link rel="stylesheet" href="./index.css">
-  <title>Lessthan41's Website</title>
-  <link rel="icon" type="image/ico" href="image/icon.png" />
+    <meta charset="utf-8">
+    <!-- use device width as webpage's width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Compatible ie=edge -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap's CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FontAwesome's CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- OpenLayers's CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./index.css">
+    <title>Lessthan41's Website</title>
+    <link rel="icon" type="image/ico" href="image/icon.png" />
 </head>
 
 <body>
-  <!-- Onload Div -->
-  <div id=drawBgcolor></div>
-  <!----------------------------------------------->
-  <div id=loadingWord><span>Wayne Ho</span></div>
-  <div class="spinner-grow" role="status">
-    <span class="sr-only">Loading...</span>
-  </div>
+    <!-- Onload Div -->
+    <div id=drawBgcolor></div>
+    <!----------------------------------------------->
+    <div id=loadingWord><span>Wayne Ho</span></div>
+    <div class="spinner-grow" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
 
-  <div id="mySidenav" class="sidenav">
-    <div id=fish><i class="fas fa-fish"></i></div>
-    <a href="javascript:void(0);">AboutMe</a>
-    <a href="javascript:void(0);">Skills</a>
-    <a href="javascript:void(0);">Education</a>
-    <a href="javascript:void(0);">Experience</a>
-    <a href="javascript:void(0);">Lab</a>
-    <a href="javascript:void(0);">Interest</a>
-  </div>
-  <!-- open the sidenav -->
-  <span onclick="openNav()" id=navicon><i class="fas fa-bars"></i></span>
+    <div id="mySidenav" class="sidenav">
+        <div id=fish><i class="fas fa-fish"></i></div>
+        <a href="javascript:void(0);">AboutMe</a>
+        <a href="javascript:void(0);">Education</a>
+        <a href="javascript:void(0);">Experience</a>
+        <a href="javascript:void(0);">Skills</a>
+        <a href="javascript:void(0);">Works</a>
+        <a href="javascript:void(0);">Lab</a>
+        <a href="javascript:void(0);">Interest</a>
+    </div>
+    <!-- open the sidenav -->
+    <span onclick="openNav()" id=navicon><i class="fas fa-bars"></i></span>
 
-  <!--==================================
+    <!--==================================
                     BG
   ====================================-->
-  <div class="top" onclick="closeNav()"></div>
-  <!--==================================
+    <div class="top" onclick="closeNav()"></div>
+    <!--==================================
                   INTRO
   ====================================-->
 
-  <div class="mid" onclick="closeNav()">
-    <div id=me>
+    <div class="mid" onclick="closeNav()">
+        <div id=me>
+        </div>
+        <div id=line></div>
+        <div id=intro_text>
+            <a id=name>Wayne Ho</a>
+            <br><br>
+            <ul>
+                <li><i class="fas fa-globe-asia"></i><a>Dept. Geography, NTU</a></li>
+                <li><i class="fas fa-envelope"></i><a>b06208030@ntu.edu.tw</a></li>
+                <li><i class="fas fa-mobile-alt"></i><a>(+886) 973245248</a></li>
+            </ul>
+            <!-- Button -->
+            <div id=btnDiv>
+                <a href="https://www.facebook.com/lessthan41" target="_blank">
+                    <button type="button" class="btn btn-default btn-circle btn-lg" id=fb style="background-color: #3b5998;">
+                        <i class="fab fa-facebook-f"></i>
+                    </button></a> <!-- </a> must be here -->
+                <a href="https://www.instagram.com/lessthan41/" target="_blank">
+                    <button type="button" class="btn btn-default btn-circle btn-lg" id=ig style="background-color: #f77737;">
+                        <i class="fab fa-instagram"></i>
+                    </button></a>
+                <a href="https://github.com/lessthan41" target="_blank">
+                    <button type="button" class="btn btn-default btn-circle btn-lg" id=gh style="background-color: #6e5494;">
+                        <i class="fab fa-github"></i>
+                    </button></a>
+            </div>
+        </div>
     </div>
-    <div id=line></div>
-    <div id=intro_text>
-      <a id=name>Wayne Ho</a>
-      <br><br>
-      <ul>
-        <li><i class="fas fa-globe-asia"></i><a>Dept. Geography, NTU</a></li>
-        <li><i class="fas fa-envelope"></i><a>b06208030@ntu.edu.tw</a></li>
-        <li><i class="fas fa-mobile-alt"></i><a>+886 973245248</a></li>
-      </ul>
-      <!-- Button -->
-      <div id=btnDiv>
-        <a href="https://www.facebook.com/lessthan41" target="_blank">
-          <button type="button" class="btn btn-default btn-circle btn-lg" id=fb style="background-color: #3b5998;">
-            <i class="fab fa-facebook-f"></i>
-          </button></a> <!-- </a> must be here -->
-        <a href="https://www.instagram.com/lessthan41/" target="_blank">
-          <button type="button" class="btn btn-default btn-circle btn-lg" id=ig style="background-color: #f77737;">
-            <i class="fab fa-instagram"></i>
-          </button></a>
-        <a href="https://github.com/lessthan41" target="_blank">
-          <button type="button" class="btn btn-default btn-circle btn-lg" id=gh style="background-color: #6e5494;">
-            <i class="fab fa-github"></i>
-          </button></a>
-      </div>
-    </div>
-  </div>
 
-  <!--==================================
+    <!--==================================
                   BOTTOM
   ====================================-->
-  <div class="bottom" onclick="closeNav()"><br>
-    <!------------------------------------------>
-    <div class="inner innerFirst container"><br><br>
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-9 title" id=AboutMe><i class="fas fa-user"></i> About Me</div>
-      </div>
-      <div class="row text">
-        <div class="col-2"></div>
-        <div class="col-8">
-          <span>Hi ! I'm Wayne Ho, a student in NTU, Taiwan. I major in Geography, learning Geographic Information System, spatial data process, Python and R. Now I'm working on a Name Entity Recognition (NER) chatbot project with
-              <a href="https://bourbon0212.github.io/107-Frontend-Programming/Resume/index.html" target="_blank">Bourbon</a>,
-              <a href="https://morrishsieh3059.github.io/Frontend-Programming/hw1%20resume/index.html" target="_blank">Morris</a>,
-              as well as learning user interface design and C++ Programming.
-            <br><br>This is a self introduction using
-            <a href="https://getbootstrap.com/" target="_blank">BootStrap</a>,
-            <a href="https://openlayers.org/" target="_blank">OpenLayers</a>,
-            <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and
-            <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>.
-        </span>
-        </div>
-        <div class="col-2"></div>
-      </div><br>
-    </div>
-    <!------------------------------------------>
-    <div class="inner container"><br><br>
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-9 title" id=Skills><i class="fas fa-award"></i> Skills</div>
-      </div>
-      <div class="row" id=chartRow>
-        <div class="col-2"></div>
-        <div class="col-8">
-          <div class="chart-div">
-            <canvas id="chart-area"></canvas>
-          </div>
-        </div>
-        <div class="col-2"></div>
-      </div>
-
-      <div class="row skillRow" id=skillRow1>
-        <div class="col-2"></div>
-        <div class="col-4 flow carouselDiv" id=carouselDiv1>
-          <!-- Carousel -->
-          <div id="carousel1" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <figure class="figure">
-                  <img class="figure-img img-fluid rounded d-block w-100" src="./image/TSearch.png" alt="T-Search">
-                  <figcaption class="figure-caption text-center">
-                    Historical Typhoon Search System, using HTML.<br>
-                    <p>(July, 2019)</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="carousel-item">
-                <figure class="figure">
-                  <img class="figure-img img-fluid rounded d-block w-100" src="./image/D3js.png" alt="python">
-                  <figcaption class="figure-caption text-center">
-                    Annual SOI index illustration, using D3.js.<br>
-                    <p>(April, 2019)</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="carousel-item">
-                <figure class="figure">
-                  <img class="figure-img img-fluid rounded d-block w-100" src="./image/python2.png" alt="python">
-                  <figcaption class="figure-caption text-center">
-                    Centroid and buffer demo, using Python.<br>
-                    <p>(June, 2018)</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="carousel-item">
-                <figure class="figure">
-                  <img class="figure-img img-fluid rounded d-block w-100" src="./image/openlayers.png" alt="HTML">
-                  <figcaption class="figure-caption text-center">
-                    2018 Referendum Result in Taiwan, using HTML.<br>
-                    <p>(Jan. , 2018)</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="carousel-item">
-                <figure class="figure">
-                  <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/R.png" alt="R">
-                  <figcaption class="figure-caption text-center">
-                    Spatial Points Data Analysis, Calculating by R.<br>
-                    <p>(Mar. , 2019)</p>
-                  </figcaption>
-                </figure>
-              </div>
+    <div class="bottom" onclick="closeNav()"><br>
+        <!------------------------------------------>
+        <div class="inner innerFirst container"><br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 title" id=AboutMe><i class="fas fa-user"></i> About Me</div>
             </div>
-            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-4" id=skillTxt>
-          <!-- Python intro -->
-          <div class="skillIntro" id=skillIntro1>
-            <h4>HTML&CSS, JavaScript</h4>
-            <ul>
-              <li>OpenLayers ─ Interactive Spatial Demo</li>
-              <li>Dashboard, D3.js ─ Data Visualization</li>
-            </ul>
-            <h4>R Programming</h4>
-            <ul>
-              <li>Hypothesis Test ─ Data Analysis</li>
-              <li>Dplyr, Ggplot2 ─ Data Process, Present</li>
-              <li>JiebaR, Tm ─ Text Mining</li>
-            </ul>
-            <h4>Python</h4>
-            <ul>
-              <li>Pandas ─ Analysing data with Matplotlib</li>
-              <li>Geopandas ─ Spatial Analysis</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-2"></div>
-      </div>
-
-      <div class="row skillRow" id=skillRow2>
-        <div class="col-2"></div>
-        <div class="col-4">
-
-          <!-- Python intro -->
-          <div id=forInsertTxt style="display: none;"></div>
-          <div class="skillIntro" id=skillIntro2>
-            <h4>ArcMap</h4>
-            <ul>
-              <li>Shapefile Process, Network Analysis, Intesection, Buffer et cetera.</li>
-            </ul>
-            <h4>ENVI</h4>
-            <ul>
-              <li>Satelite Image, Aerial Photo Process, Region of Interest Analysis.</li>
-            </ul>
-            <h4>JAVA</h4>
-            <ul>
-              <li>Simple window application building for fun or some little ideas.</li>
-            </ul>
-          </div>
-
-        </div>
-        <div class="col-4 flow carouselDiv" id=carouselDiv2>
-          <div id=forInsertImg style="display: none;"></div>
-          <!-- Carousel -->
-          <div id="carousel2" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <figure class="figure">
-                  <img class="figure-img img-fluid rounded d-block w-100" src="./image/ENVI.png" alt="ENVI">
-                  <figcaption class="figure-caption text-center">
-                    2017 ROI masking with threshold, using ENVI.<br>
-                    <p>(Jan. , 2019)</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="carousel-item">
-                <figure class="figure">
-                  <img class="figure-img img-fluid rounded d-block w-100" src="./image/ENVI2.png" alt="ENVI">
-                  <figcaption class="figure-caption text-center">
-                    NDVI analysis in Taipei, using ENVI.<br>
-                    <p>(Jan. , 2019)</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="carousel-item">
-                <figure class="figure">
-                  <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/arcmap.png" alt="Arcmap">
-                  <figcaption class="figure-caption text-center">
-                    3D Terrain Model, using ArcMap<br>
-                    <p>(May, 2018)</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="carousel-item">
-                <figure class="figure">
-                  <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/dinogame.png" alt="Arcmap">
-                  <figcaption class="figure-caption text-center">
-                    Dino Game Practice for fun, using Java.<br>
-                    <p>(June, 2019)</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-
-        </div>
-        <div class="col-2"></div>
-      </div>
-
-    </div>
-    <!------------------------------------------>
-    <div class="inner container"><br><br>
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-9 title" id=Education><img src="./image/education.png" alt="experience" class="titleImg"> Education</div>
-      </div>
-      <div class="row text">
-        <div class="col-3"></div>
-        <div class="col-8">
-
-          <span class="year">2017</span>
-          <div class="flow">
-            <svg width="80" height="110">
-              <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
-            <div class="schoolInfo">
-              <ul class="edu">
-                <li>
-                  <a href="http://www.geog.ntu.edu.tw/index.php/tw/" target="_blank">
-                    <h5>Dept. of Geography, National Taiwan University</h5>
-                  </a>
-                </li>
-                <li class="eduDetailDate"><span>2005 Sep. ~</span></li><br>
-              </ul>
-            </div><br>
-          </div>
-
-          <span class="year">2014</span>
-          <div class="flow">
-            <svg width="80" height="110">
-              <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
-            <div class="schoolInfo">
-              <ul class="edu">
-                <li>
-                  <a href="https://www2.ck.tp.edu.tw/" target="_blank">
-                    <h5>Chien-Kuo Senior High School</h5>
-                  </a>
-                </li>
-                <li class="eduDetailDate"><span>2014 Sep. ~ 2017 Jun.</span></li><br>
-              </ul>
-            </div>
-          </div>
-
-          <span class="year">2011</span>
-          <div class="flow">
-            <svg width="80" height="110">
-              <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
-            <div class="schoolInfo">
-              <ul class="edu">
-                <li>
-                  <a href="http://www.jdjh.ntpc.edu.tw/default_page.asp" target="_blank">
-                    <h5>Jeng-De Junior High School</h5>
-                  </a>
-                </li>
-                <li class="eduDetailDate"><span>2011 Sep. ~ 2014 Jun.</span></li>
-              </ul>
-            </div>
-          </div>
-
-          <span class="year">2005</span>
-          <div class="flow">
-            <svg width="80" height="180">
-              <line x1="30" y1="20" x2="30" y2="180" stroke="#818990" /></svg>
-            <div class="schoolInfo">
-              <ul class="edu">
-                <li>
-                  <a href="http://www.tsps.ntpc.edu.tw/" target="_blank">
-                    <h5>Tam-Shui Elementary School</h5>
-                  </a>
-                </li>
-                <li class="eduDetailDate"><span>2009 Sep. ~ 2011 Jun.</span></li><br>
-                <li>
-                  <a href="http://www.dkes.ntpc.edu.tw/" target="_blank">
-                    <h5>Deng-Gong Elementary School</h5>
-                  </a>
-                </li>
-                <li class="eduDetailDate"><span>2005 Sep. ~ 2009 Jun.</span></li><br>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-1"></div>
-      </div>
-    </div>
-    <!------------------------------------------>
-    <div class="inner container"><br><br>
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-9 title" id=Experience><img src="./image/experience.png" alt="experience" class="titleImg"> Experience</div>
-      </div>
-      <div class="row text expDiv">
-        <div class="col-2"></div>
-        <div class="col-4">
-          <!-- Exp Company -->
-          <ul class="companyUl">
-            <li>
-              <a href="https://www.izone.com.tw/" target="_blank">
-                <h5>iZone Co., Ltd (Summer Intern)</h5>
-              </a>
-            </li>
-            <li class="workdate">
-              <span>2017 Jun. ~ 2017 Jul.</span>
-            </li>
-            <p>Learning about how camera works, resolution and some application.</p><br>
-            <li>
-              <a href="https://www.1111.com.tw/corp/67712337/" target="_blank">
-                <h5>Yu-Zhi Co., Ltd (Summer Intern)</h5>
-              </a>
-            </li>
-            <li class="workdate">
-              <span>2018 Jun. ~ 2018 Jul.</span>
-            </li>
-            <p>Learning about how Geography is utilized in the reality.</p>
-          </ul>
-        </div>
-        <div class="col-5">
-          <!-- Map -->
-          <div id="map" class="map"></div>
-          <!-- Overlay -->
-          <div id="marker1" title="Marker"></div>
-          <div id="marker2" title="Marker"></div>
-          <div id="popup1" class="popup"><a>iZone</a></div>
-          <div id="popup2" class="popup"><a>Yu-Zhi</a></div>
-        </div>
-        <div class="col-1"></div>
-      </div>
-    </div>
-    <!------------------------------------------>
-    <div class="inner container"><br><br>
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-9 title" id=Lab><i class="fas fa-user-tie"></i> Lab</div>
-      </div>
-      <div class="row text" id=labDiv>
-        <div class="col-1"></div>
-
-        <div class="col-5">
-          <div class="card">
-            <div class="labImg">
-              <div class="labFilter" id=lab1>
-                <div class="visitLab" id=visitLab1><a href='http://peculab.org/' target='_blank'>Visit Peculab</a></div>
-              </div>
-              <div id=labImg1>
-                <img class="card-img-top" src="./image/peculab.jpg" alt="peculab">
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">Peculab, NTU</p>
-              <div class="labTime"><span>2018 Sep. ~ </span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-5">
-          <div class="card">
-            <div class="labImg">
-              <div class="labFilter" id=lab1>
-                <div class="visitLab" id=visitLab2><a href='https://ntusthcilab.weebly.com/' target='_blank'>Visit NTUST HCILab</a></div>
-              </div>
-              <div id=labImg2>
-                <img class="card-img-top" id=labImg2 src="./image/hcilab.jpg" alt="hcilab">
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">HCILab, NTUST</p>
-              <div class="labTime"><span>2018 Sep. ~ </span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-1"></div>
-      </div>
-    </div>
-    <!------------------------------------------>
-    <div class="inner innerLast container"><br><br>
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-9 title" id=Interest><i class="fas fa-music"></i> Interest</div>
-      </div>
-      <div class="row text" id=interestDiv>
-        <div class="col-2"></div>
-        <div class="col-8">
-
-          <div class="card">
-            <div class="interestRow">
-              <div class="interestImg" id=interestImg1></div>
-              <div class="interestText" id=interestText1>
-                <h5>Guitar</h5>
-                <div class="interestDetail"><span>My favorite one ,<br> especially Fingerstyle.</span></div>
-                <div class="idol"><span class="idolWord">Idol: &nbsp;</span><span><a href="http://www.sunghajung.com/" target="_blank">Sungha Jung</a></span></div>
-              </div>
-            </div>
-
-            <div class="interestRow">
-              <div class="interestText" id=interestText2>
-                <h5>K-Pop</h5>
-                <div class="interestDetail"><span>Life is Music !</span><br></div>
-                <div class="idol"><span class="idolWord">Idol:&nbsp;</span><span>
-                    <a href="http://taeyeon.smtown.com" target="_blank">TaeYeon (태연)</a><br>&nbsp;
-                    <a href="https://www.instagram.com/dlwlrma/?hl=zh-tw" target="_blank">IU (이지은)</a></span>
+            <div class="row text">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <span>Hi ! I'm Wayne Ho, a student in NTU, Taiwan. I major in Geography, learning Geographic Information System, spatial data process, Python and R. Now I'm working on a Name Entity Recognition (NER) chatbot project with
+                        <a href="https://bourbon0212.github.io/107-Frontend-Programming/Resume/index.html" target="_blank">Bourbon</a>,
+                        <a href="https://morrishsieh3059.github.io/Frontend-Programming/hw1%20resume/index.html" target="_blank">Morris</a>,
+                        as well as learning user interface design and C++ Programming.
+                        <br><br>This is a self introduction using
+                        <a href="https://getbootstrap.com/" target="_blank">BootStrap</a>,
+                        <a href="https://openlayers.org/" target="_blank">OpenLayers</a>,
+                        <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and
+                        <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>.
+                    </span>
                 </div>
-              </div>
-              <div class="interestImg" id=interestImg2></div>
+                <div class="col-2"></div>
+            </div><br>
+        </div>
+        <!------------------------------------------>
+        <div class="inner container"><br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 title" id=Education><img src="./image/education.png" alt="experience" class="titleImg"> Education</div>
+            </div>
+            <div class="row text">
+                <div class="col-3"></div>
+                <div class="col-8">
+
+                    <span class="year">2017</span>
+                    <div class="flow">
+                        <svg width="80" height="110">
+                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
+                        <div class="schoolInfo">
+                            <ul class="edu">
+                                <li>
+                                    <a href="http://www.geog.ntu.edu.tw/index.php/tw/" target="_blank">
+                                        <h5>Dept. of Geography, National Taiwan University</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2017 Sep. ~ 2021 Jun.</span></li><br>
+                            </ul>
+                        </div><br>
+                    </div>
+
+                    <span class="year">2014</span>
+                    <div class="flow">
+                        <svg width="80" height="110">
+                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
+                        <div class="schoolInfo">
+                            <ul class="edu">
+                                <li>
+                                    <a href="https://www2.ck.tp.edu.tw/" target="_blank">
+                                        <h5>Chien-Kuo Senior High School</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2014 Sep. ~ 2017 Jun.</span></li><br>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <span class="year">2011</span>
+                    <div class="flow">
+                        <svg width="80" height="110">
+                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
+                        <div class="schoolInfo">
+                            <ul class="edu">
+                                <li>
+                                    <a href="http://www.jdjh.ntpc.edu.tw/default_page.asp" target="_blank">
+                                        <h5>Jeng-De Junior High School</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2011 Sep. ~ 2014 Jun.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <span class="year">2005</span>
+                    <div class="flow">
+                        <svg width="80" height="180">
+                            <line x1="30" y1="20" x2="30" y2="180" stroke="#818990" /></svg>
+                        <div class="schoolInfo">
+                            <ul class="edu">
+                                <li>
+                                    <a href="http://www.tsps.ntpc.edu.tw/" target="_blank">
+                                        <h5>Tam-Shui Elementary School</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2009 Sep. ~ 2011 Jun.</span></li><br>
+                                <li>
+                                    <a href="http://www.dkes.ntpc.edu.tw/" target="_blank">
+                                        <h5>Deng-Gong Elementary School</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2005 Sep. ~ 2009 Jun.</span></li><br>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <!------------------------------------------>
+        <div class="inner container"><br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 title" id=Experience><img src="./image/experience.png" alt="experience" class="titleImg"> Experience</div>
+            </div>
+            <div class="row text expDiv">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <!-- Exp Company -->
+                    <ul class="companyUl">
+                        <li>
+                            <a href="https://global.9splay.com/" target="_blank">
+                                <h5>9Splay Entertainment Tech. Co., Ltd</h5>
+                            </a>
+                        </li>
+                        <li class="workdate">
+                            <span>2020 Dec. ~ 2021 Jun.</span>
+                        </li>
+                        <!-- <p></p><br> -->
+                        <ul>
+                            <li>Stage Design</li>
+                            <li>Mechanism Design</li>
+                        </ul><br>
+
+                        <li>
+                            <a href="" target="_blank">
+                                <h5>Election Commission of NTU Student Association</h5>
+                            </a>
+                        </li>
+                        <li class="workdate">
+                            <span>2019 May.</span>
+                        </li>
+                        <!-- <p></p><br> -->
+                        <ul>
+                            <li>On-site engineer for election system</li>
+                        </ul><br>
+
+                        <li>
+                            <a href="https://www.1111.com.tw/corp/67712337/" target="_blank">
+                                <h5>Yu Zhi Co., Ltd (Summer Intern)</h5>
+                            </a>
+                        </li>
+                        <li class="workdate">
+                            <span>2018 Jun. ~ 2018 Jul.</span>
+                        </li>
+                        <ul>
+                            <li>Data Analysis</li>
+                            <li>Information Management</li>
+                        </ul><br>
+                        <!-- <p>Learning about how Geography is utilized in the reality.</p><br> -->
+                        <li>
+                            <a href="https://www.izone.com.tw/" target="_blank">
+                                <h5>iZone Co., Ltd (Summer Intern)</h5>
+                            </a>
+                        </li>
+                        <li class="workdate">
+                            <span>2017 Jun. ~ 2017 Jul.</span>
+                        </li>
+
+                        <ul>
+                            <li>Quality Management</li>
+                            <li>Stability Test</li>
+                        </ul><br>
+                        <!-- <p>Learning about how camera works, resolution and some application.</p> -->
+                    </ul>
+                </div>
+                <div class="col-5">
+                    <!-- Map -->
+                    <div id="map" class="map"></div>
+                    <!-- Overlay -->
+                    <div id="marker1" title="Marker"></div>
+                    <div id="marker2" title="Marker"></div>
+                    <div id="marker3" title="Marker"></div>
+                    <div id="marker4" title="Marker"></div>
+                    <div id="popup1" class="popup"><a>iZone</a></div>
+                    <div id="popup2" class="popup"><a>Yu-Zhi</a></div>
+                    <div id="popup3" class="popup"><a>NTU</a></div>
+                    <div id="popup4" class="popup"><a>9Splay</a></div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <!------------------------------------------>
+        <div class="inner container"><br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 title" id=Skills><i class="fas fa-award"></i> Skills</div>
+            </div>
+            <div class="row" id=chartRow>
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="chart-div">
+                        <canvas id="chart-area"></canvas>
+                    </div>
+                </div>
+                <div class="col-2"></div>
             </div>
 
-          </div>
+            <div class="row skillRow" id=skillRow1>
+                <div class="col-2"></div>
+                <div class="col-4 flow carouselDiv" id=carouselDiv1>
+                    <!-- Carousel -->
+                    <div id="carousel1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" src="./image/TSearch.png" alt="T-Search">
+                                    <figcaption class="figure-caption text-center">
+                                        Historical Typhoon Search System, using HTML.<br>
+                                        <p>(July, 2019)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" src="./image/D3js.png" alt="python">
+                                    <figcaption class="figure-caption text-center">
+                                        Annual SOI index illustration, using D3.js.<br>
+                                        <p>(April, 2019)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" src="./image/python2.png" alt="python">
+                                    <figcaption class="figure-caption text-center">
+                                        Centroid and buffer demo, using Python.<br>
+                                        <p>(June, 2018)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" src="./image/openlayers.png" alt="HTML">
+                                    <figcaption class="figure-caption text-center">
+                                        2018 Referendum Result in Taiwan, using HTML.<br>
+                                        <p>(Jan. , 2018)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/R.png" alt="R">
+                                    <figcaption class="figure-caption text-center">
+                                        Spatial Points Data Analysis, Calculating by R.<br>
+                                        <p>(Mar. , 2019)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-4" id=skillTxt>
+                    <!-- Python intro -->
+                    <div class="skillIntro" id=skillIntro1>
+                        <h4>HTML&CSS, JavaScript</h4>
+                        <ul>
+                            <li>OpenLayers ─ Interactive Mapping Demo</li>
+                            <li>Dashboard ─ Data Visualization</li>
+                        </ul>
+                        <h4>R Programming</h4>
+                        <ul>
+                            <li>Hypothesis Test ─ Data Analysis</li>
+                            <li>Dplyr, Ggplot2 ─ Data Process, EDA</li>
+                            <li>JiebaR, Tm ─ Text Mining</li>
+                        </ul>
+                        <h4>Python</h4>
+                        <ul>
+                            <li>Pandas ─ Analysing data, spatial analysis</li>
+                            <li>Flask ─ Web application developing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row skillRow" id=skillRow2>
+                <div class="col-2"></div>
+                <div class="col-4">
+
+                    <!-- Python intro -->
+                    <div id=forInsertTxt style="display: none;"></div>
+                    <div class="skillIntro" id=skillIntro2>
+                        <h4>ArcMap</h4>
+                        <ul>
+                            <li>Shapefile Process, Network Analysis, Intesection, Buffer et cetera.</li>
+                        </ul>
+                        <h4>ENVI</h4>
+                        <ul>
+                            <li>Satelite Image, Aerial Photo Process, Region of Interest Analysis.</li>
+                        </ul>
+                        <h4>JAVA</h4>
+                        <ul>
+                            <li>Simple window application building for fun or some elaborate ideas.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-4 flow carouselDiv" id=carouselDiv2>
+                    <div id=forInsertImg style="display: none;"></div>
+                    <!-- Carousel -->
+                    <div id="carousel2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" src="./image/ENVI.png" alt="ENVI">
+                                    <figcaption class="figure-caption text-center">
+                                        2017 ROI masking with threshold, using ENVI.<br>
+                                        <p>(Jan. , 2019)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" src="./image/ENVI2.png" alt="ENVI">
+                                    <figcaption class="figure-caption text-center">
+                                        NDVI analysis in Taipei, using ENVI.<br>
+                                        <p>(Jan. , 2019)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/arcmap.png" alt="Arcmap">
+                                    <figcaption class="figure-caption text-center">
+                                        3D Terrain Model, using ArcMap<br>
+                                        <p>(May, 2018)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/dinogame.png" alt="Arcmap">
+                                    <figcaption class="figure-caption text-center">
+                                        Dino Game Practice for fun, using Java.<br>
+                                        <p>(June, 2019)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-2"></div>
+            </div>
 
         </div>
-        <div class="col-2"></div>
-      </div>
-    </div>
-    <!------------------------------------------>
-  </div>
+        <!------------------------------------------>
+        <div class="inner container"><br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 title" id=Works><i class="fas fa-code-branch"></i>Works</div>
+            </div>
+            <div class="row text" id=workDiv>
+                <div class="col-2"></div>
+                <div class="col-8">
 
-  <!--==================================
+                <h5>Journal Paper</h5>
+                <ul class=workList>
+                    <li>Kung, H.-K. , Hsieh, C.-M., Ho, C.-Y., Tsai, Y.-C. Tsai, M.-H., Chan, H.-Y. (2021) DataAugmented Hybrid Named Entity Recognition for Disaster Management by Transfer Learning, Computing and Artificial Intelligence, Appl. Sci. 2020, xx, 5; doi:10.3390/appxx010005<a href="https://www.mdpi.com/2076-3417/10/12/4234">[LINK]</a></li>
+                    <li>Tsai, M.-H., Chan, H.-Y., Hsieh, C.-M., Ho, C.-Y., Kung, H.-K., Tsai, Y.-C. and Cho, I.-C. (2019). Historical Typhoon Search Engine Based on Track Similarity. International Journal of Environmental Research and Public Health, 16(24), 4879. doi:10.3390/ijerph16244879<a href="https://www.mdpi.com/1660-4601/16/24/4879">[LINK]</a></li>
+                </ul>
+
+                <h5>Conference Paper</h5>
+                <ul class=workList>
+                    <li>Hsieh, C.-M., Ho, C.-Y., Kung, H.-K., Chan, H.-Y., Tsai, M.-H. and Tsai, Y.-C. (2020). Track Similarity-based Typhoon Search Engine for Disaster Preparedness. 2020 Proceedings of the 37th ISARC, Kitakyushu, Japan. October 27-29. doi:10.22260/ISARC2020/0188<a href="https://www.iaarc.org/publications/2020_proceedings_of_the_37th_isarc/track_similarity_based_typhoon_search_engine_for_disaster_preparedness.html">[LINK]</a></li>
+                </ul>
+
+                <h5>Acknowledgement</h5>
+                <ul class=workList>
+                    <li>Tsai, M. H., Chan, H. Y., & Liu, L. Y. (2020). Conversation-Based School Building Inspection Support System. Applied Sciences, 10(11), 3739.<a href="https://www.mdpi.com/2076-3417/10/11/3739">[LINK]</a></li>
+                    <li>Chana, H. Y., Liua, L. Y., & Tsaia, M. H. (2019). A Conversation-based System for School Building Inspections. In ISARC. Proceedings of the International Symposium on Automation and  Robotics in Construction (Vol. 36, pp. 194-200). IAARC Publications.<a href="https://www.iaarc.org/publications/2019_proceedings_of_the_36th_isarc/a_conversation_based_system_for_school_building_inspections.html">[LINK]</a></li>
+                </ul>
+
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+        <!------------------------------------------>
+        <div class="inner container"><br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 title" id=Lab><i class="fas fa-user-tie"></i> Lab</div>
+            </div>
+            <div class="row text" id=labDiv>
+                <div class="col-1"></div>
+
+                <div class="col-5">
+                    <div class="card">
+                        <div class="labImg">
+                            <div class="labFilter" id=lab1>
+                                <div class="visitLab" id=visitLab1><a href='http://peculab.org/' target='_blank'>Visit Peculab</a></div>
+                            </div>
+                            <div id=labImg1>
+                                <img class="card-img-top" src="./image/peculab.jpg" alt="peculab">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Peculab, NTU</p>
+                            <div class="labTime"><span>2018 Sep. ~ </span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-5">
+                    <div class="card">
+                        <div class="labImg">
+                            <div class="labFilter" id=lab1>
+                                <div class="visitLab" id=visitLab2><a href='https://ntusthcilab.weebly.com/' target='_blank'>Visit NTUST HCILab</a></div>
+                            </div>
+                            <div id=labImg2>
+                                <img class="card-img-top" id=labImg2 src="./image/hcilab.jpg" alt="hcilab">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">HCILab, NTUST</p>
+                            <div class="labTime"><span>2018 Sep. ~ </span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <!------------------------------------------>
+        <div class="inner innerLast container"><br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 title" id=Interest><i class="fas fa-music"></i> Interest</div>
+            </div>
+            <div class="row text" id=interestDiv>
+                <div class="col-2"></div>
+                <div class="col-8">
+
+                    <div class="card">
+                        <div class="interestRow">
+                            <div class="interestImg" id=interestImg1></div>
+                            <div class="interestText" id=interestText1>
+                                <h5>Guitar</h5>
+                                <div class="interestDetail"><span>My favorite one ,<br> especially Fingerstyle.</span></div>
+                                <div class="idol"><span class="idolWord">Idol: &nbsp;</span><span><a href="http://www.sunghajung.com/" target="_blank">Sungha Jung</a></span></div>
+                            </div>
+                        </div>
+
+                        <div class="interestRow">
+                            <div class="interestText" id=interestText2>
+                                <h5>K-Pop</h5>
+                                <div class="interestDetail"><span>Life is Music !</span><br></div>
+                                <div class="idol"><span class="idolWord">Idol:&nbsp;</span><span>
+                                        <a href="http://taeyeon.smtown.com" target="_blank">TaeYeon (태연)</a><br>&nbsp;
+                                        <a href="https://www.instagram.com/dlwlrma/?hl=zh-tw" target="_blank">IU (이지은)</a></span>
+                                </div>
+                            </div>
+                            <div class="interestImg" id=interestImg2></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+        <!------------------------------------------>
+    </div>
+
+    <!--==================================
           import Bootstrap's JS
   ====================================-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <!--==================================
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--==================================
             import jQuery.js
   ====================================-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <!--==================================
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--==================================
             import Chart.js
   ====================================-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-  <!--==================================
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <!--==================================
             import OpenLayers.js
   ====================================-->
-  <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
-  <!--==================================
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    <!--==================================
              import other.js
   ====================================-->
-  <script type="text/javascript" src="./js/index.js"></script>
-  <script type="text/javascript" src="./js/chart.js"></script>
-  <script type="text/javascript" src="./js/map.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/chart.js"></script>
+    <script type="text/javascript" src="./js/map.js"></script>
 
 </body>
 

@@ -412,6 +412,7 @@ figcaption p {
     font-family: Corbel;
     color: grey;
     margin-left: 2vw;
+    margin-bottom: 5px;
 }
 .companyUl p{
     margin-left: 2vw;
@@ -419,10 +420,10 @@ figcaption p {
 
 /* Experience Map */
 .map{
-    height: 300px;
+    height: 550px;
 }
 /* Map Marker and Popup */
-#marker1, #marker2 {
+#marker1, #marker2, #marker3, #marker4 {
     width: 8px;
     height: 8px;
     border: 1px solid #6aaeae;
@@ -443,7 +444,7 @@ figcaption p {
     left: -50px;
     min-width: 58px;
 }
-#popup1 a, #popup2 a{
+#popup1 a, #popup2 a, #popup3 a, #popup4 a {
     font-weight: 500;
     color: white;
     vertical-align: 6px;
@@ -586,6 +587,11 @@ figcaption p {
 }
 .idol{
     margin-top: 30px;
+}
+
+/* Work */
+.workList {
+    font-family: serif;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -896,6 +902,7 @@ figcaption p {
         font-size: 0.7rem;
     }
 }
+
 /* ------------------------------------------------------------------------- */
 /* Interest */
 @media screen and (max-width: 1200px) {
