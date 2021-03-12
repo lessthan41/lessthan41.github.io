@@ -1,7 +1,7 @@
 // Data
 var datasets = [{
   data: [
-    90, 90, 90, 90, 80, 80, 80, 70, 70
+    90, 90, 90, 90, 80, 80, 80, 80, 70
   ],
   backgroundColor: [
     'rgb(238, 63, 63)', //red
@@ -20,12 +20,12 @@ var labels = [
   'HTML&CSS',
   'JavaScript',
   'Python',
+  'C++',
   'R',
   'Unity',
   'ArcMap',
   'SQL',
   'JAVA',
-  'ENVI',
 ];
 
 // Options
