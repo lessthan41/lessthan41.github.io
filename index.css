@@ -200,7 +200,7 @@ background: rgb(219,219,219);
     height: -webkit-fill-available;
     width: -webkit-fill-available;
     background-size: cover;
-    background-image: url(./image/me.jpg);
+    background-image: url(./image/me.png);
     clip-path: polygon(0 0, 100% 0%, 54% 100%, 0% 100%);
 }
 
