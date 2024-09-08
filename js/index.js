@@ -87,41 +87,25 @@ $(document).ready(function(){
   }
 })
 
-$(window).resize(function(){
-  if ($(window).width() < 835){
-      $('#carousel2').insertAfter('#carousel1');
-      $('#skillIntro2').insertAfter('#skillIntro1');
-  }
-  if ($(window).width() >= 835){
-      $('#carousel2').insertAfter('#forInsertImg');
-      $('#skillIntro2').insertAfter('#forInsertTxt');
-  }
-})
+// $(window).resize(function(){
+//   if ($(window).width() < 835){
+//       $('#carousel2').insertAfter('#carousel1');
+//       $('#skillIntro2').insertAfter('#skillIntro1');
+//   }
+//   if ($(window).width() >= 835){
+//       $('#carousel2').insertAfter('#forInsertImg');
+//       $('#skillIntro2').insertAfter('#forInsertTxt');
+//   }
+// })
 
 // -------------------------------------------------------------------------
-// For labImg Size
-$(function() {
-  $(".labFilter").css({
-    'width': ($(".card-img-top").width() + 'px'),
-    'height': ($(".card-img-top").height() + 'px'),
-  });
-});
-
-$(window).resize(function(){
-  $(".labFilter").css({
-    'trainsition': '0s',
-    'width': ($(".card-img-top").width() + 'px'),
-    'height': ($(".card-img-top").height() + 'px'),
-    'trainsition': '1s'
-  });
-});
-
 // For labImg hover
-var originSize;
 $('.labFilter').on( "mouseover", function(){
   this.style.backgroundColor = "rgba(0,0,0,0.3)";
+  $(this).find('.visitLab').css("display", "block");
 });
 
 $('.labFilter').mouseleave(function(){
   this.style.backgroundColor = null;
+  $(this).find('.visitLab').css("display", "none");
  });

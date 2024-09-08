@@ -3,11 +3,11 @@ var izone = ol.proj.fromLonLat([121.522807,25.0666052]);
 var yuzhi = ol.proj.fromLonLat([121.534315,25.0561904]);
 var NTU = ol.proj.fromLonLat([121.5375631,25.0173405]);
 var play9S = ol.proj.fromLonLat([121.5698346,25.0799179]);
+var NTHU = ol.proj.fromLonLat([120.970713,24.7952275]);
 
 var view = new ol.View({
-  center: ol.proj.fromLonLat([121.5397749,25.0526613]),
-  // minZoom: 7.2,
-  zoom: 12.5
+  center: ol.proj.fromLonLat([121.302993,24.998757]),
+  zoom: 9.2
 })
 
 var raster = new ol.layer.Tile({
@@ -45,22 +45,31 @@ var map = new ol.Map({
   map.addOverlay(marker2);
 
   // Marker3
-   var marker3 = new ol.Overlay({
-     position: NTU,
-     positioning: 'center-center',
-     element: document.getElementById('marker3'),
-     stopEvent: false
-   });
-   map.addOverlay(marker3);
+  var marker3 = new ol.Overlay({
+    position: NTU,
+    positioning: 'center-center',
+    element: document.getElementById('marker3'),
+    stopEvent: false
+  });
+  map.addOverlay(marker3);
 
    // Marker4
-    var marker4 = new ol.Overlay({
-      position: play9S,
-      positioning: 'center-center',
-      element: document.getElementById('marker4'),
-      stopEvent: false
-    });
-    map.addOverlay(marker4);
+  var marker4 = new ol.Overlay({
+    position: play9S,
+    positioning: 'center-center',
+    element: document.getElementById('marker4'),
+    stopEvent: false
+  });
+  map.addOverlay(marker4);
+
+  // Marker5
+  var marker5 = new ol.Overlay({
+    position: NTHU,
+    positioning: 'center-center',
+    element: document.getElementById('marker5'),
+    stopEvent: false
+  });
+  map.addOverlay(marker5);
 
  // Popup1
  var popup1 = new ol.Overlay({
@@ -89,3 +98,10 @@ var map = new ol.Map({
  });
  popup4.setPosition(play9S);
  map.addOverlay(popup4);
+
+// Popup5
+var popup5 = new ol.Overlay({
+  element: document.getElementById('popup5')
+});
+popup5.setPosition(NTHU);
+map.addOverlay(popup5);

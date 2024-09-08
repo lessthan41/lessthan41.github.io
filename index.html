@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
     <!-- import CSS -->
     <link rel="stylesheet" href="./index.css">
-    <title>Lessthan41's Website</title>
+    <title>Evan's Profile</title>
     <link rel="icon" type="image/ico" href="image/icon.png" />
 </head>
 
@@ -31,12 +31,12 @@
     <div id="mySidenav" class="sidenav">
         <div id=fish><i class="fas fa-fish"></i></div>
         <a href="javascript:void(0);">AboutMe</a>
+        <a href="javascript:void(0);">Works</a>
+        <a href="javascript:void(0);">Skills</a>
+        <a href="javascript:void(0);">Laboratory</a>
         <a href="javascript:void(0);">Education</a>
         <a href="javascript:void(0);">Experience</a>
-        <a href="javascript:void(0);">Skills</a>
-        <a href="javascript:void(0);">Works</a>
-        <a href="javascript:void(0);">Lab</a>
-        <a href="javascript:void(0);">Interest</a>
+        <a href="javascript:void(0);">Hobbies</a>
     </div>
     <!-- open the sidenav -->
     <span onclick="openNav()" id=navicon><i class="fas fa-bars"></i></span>
@@ -109,192 +109,56 @@
         <div class="inner container"><br><br>
             <div class="row">
                 <div class="col-1"></div>
-                <div class="col-9 title" id=Education><img src="./image/education.png" alt="experience" class="titleImg"> Education</div>
+                <div class="col-9 title" id=Works><i class="fas fa-code-branch"></i>Works</div>
             </div>
-            <div class="row text">
-                <div class="col-3"></div>
+            <div class="row text" id=workDiv>
+                <div class="col-2"></div>
                 <div class="col-8">
 
-                    <span class="year">2022</span>
-                    <div class="flow">
-                        <svg width="80" height="110">
-                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
-                        <div class="schoolInfo">
-                            <ul class="edu">
-                                <li>
-                                    <a href="http://web.cs.nthu.edu.tw/" target="_blank">
-                                        <h5>Dept. of Computer Science, National Tsing-Hua University</h5>
-                                    </a>
-                                </li>
-                                <li class="eduDetailDate"><span>2022 Sep. ~ 2025 Jan.</span></li><br>
-                            </ul>
-                        </div><br>
-                    </div>
+                <h5>Conference Paper</h5>
+                <ul class=workList>
+                    <li>Lin, S. C., Lee, H. W., Hsieh, Y. H., Ho, C. Y., & Lai, S. H. (2023). Masked Attention ConvNeXt Unet with Multi-Synthesis Dynamic Weighting for Anomaly Detection and Localization<a target="_blank" href="https://papers.bmvc2023.org/0911.pdf">[LINK]</a></li>
+                    <li>Hsieh, C.-M., Ho, C.-Y., Kung, H.-K., Chan, H.-Y., Tsai, M.-H. and Tsai, Y.-C. (2020). Track Similarity-based Typhoon Search Engine for Disaster Preparedness. 2020 Proceedings of the 37th ISARC, Kitakyushu, Japan. October 27-29. doi:10.22260/ISARC2020/0188<a target="_blank" href="https://www.iaarc.org/publications/2020_proceedings_of_the_37th_isarc/track_similarity_based_typhoon_search_engine_for_disaster_preparedness.html">[LINK]</a></li>
+                </ul>
 
-                    <span class="year">2017</span>
-                    <div class="flow">
-                        <svg width="80" height="110">
-                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
-                        <div class="schoolInfo">
-                            <ul class="edu">
-                                <li>
-                                    <a href="http://www.geog.ntu.edu.tw/index.php/tw/" target="_blank">
-                                        <h5>Dept. of Geography, National Taiwan University</h5>
-                                    </a>
-                                </li>
-                                <li class="eduDetailDate"><span>2017 Sep. ~ 2021 Jun.</span></li><br>
-                            </ul>
-                        </div><br>
-                    </div>
+                <h5>Workshop</h5>
+                <ul class=workList>
+                    <li>2nd Place in MultiSports Challenge, ECCV 2022 DeeperAction Challenge and Workshop on Detailed Video Action Understanding and Anomaly Recognition<a href="https://deeperaction.github.io/results/index.html">[LINK]</a></li>
+                </ul>
 
-                    <span class="year">2014</span>
-                    <div class="flow">
-                        <svg width="80" height="110">
-                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
-                        <div class="schoolInfo">
-                            <ul class="edu">
-                                <li>
-                                    <a href="https://www2.ck.tp.edu.tw/" target="_blank">
-                                        <h5>Chien-Kuo Senior High School</h5>
-                                    </a>
-                                </li>
-                                <li class="eduDetailDate"><span>2014 Sep. ~ 2017 Jun.</span></li><br>
-                            </ul>
-                        </div>
-                    </div>
+                <h5>Journal Paper</h5>
+                <ul class=workList>
+                    <li>Kung, H.-K. , Hsieh, C.-M., Ho, C.-Y., Tsai, Y.-C. Tsai, M.-H., Chan, H.-Y. (2021) DataAugmented Hybrid Named Entity Recognition for Disaster Management by Transfer Learning, Computing and Artificial Intelligence, Appl. Sci. 2020, xx, 5; doi:10.3390/appxx010005<a target="_blank" href="https://www.mdpi.com/2076-3417/10/12/4234">[LINK]</a></li>
+                    <li>Tsai, M.-H., Chan, H.-Y., Hsieh, C.-M., Ho, C.-Y., Kung, H.-K., Tsai, Y.-C. and Cho, I.-C. (2019). Historical Typhoon Search Engine Based on Track Similarity. International Journal of Environmental Research and Public Health, 16(24), 4879. doi:10.3390/ijerph16244879<a target="_blank" href="https://www.mdpi.com/1660-4601/16/24/4879">[LINK]</a></li>
+                </ul>
 
-                    <span class="year">2011</span>
-                    <div class="flow">
-                        <svg width="80" height="110">
-                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
-                        <div class="schoolInfo">
-                            <ul class="edu">
-                                <li>
-                                    <a href="http://www.jdjh.ntpc.edu.tw/default_page.asp" target="_blank">
-                                        <h5>Jeng-De Junior High School</h5>
-                                    </a>
-                                </li>
-                                <li class="eduDetailDate"><span>2011 Sep. ~ 2014 Jun.</span></li>
-                            </ul>
-                        </div>
-                    </div>
+                <h5>Acknowledgement</h5>
+                <ul class=workList>
+                    <li>Tsai, M. H., Chan, H. Y., & Liu, L. Y. (2020). Conversation-Based School Building Inspection Support System. Applied Sciences, 10(11), 3739.<a href="https://www.mdpi.com/2076-3417/10/11/3739">[LINK]</a></li>
+                    <li>Chana, H. Y., Liua, L. Y., & Tsaia, M. H. (2019). A Conversation-based System for School Building Inspections. In ISARC. Proceedings of the International Symposium on Automation and  Robotics in Construction (Vol. 36, pp. 194-200). IAARC Publications.<a target="_blank" href="https://www.iaarc.org/publications/2019_proceedings_of_the_36th_isarc/a_conversation_based_system_for_school_building_inspections.html">[LINK]</a></li>
+                </ul>
 
-                    <span class="year">2005</span>
-                    <div class="flow">
-                        <svg width="80" height="180">
-                            <line x1="30" y1="20" x2="30" y2="180" stroke="#818990" /></svg>
-                        <div class="schoolInfo">
-                            <ul class="edu">
-                                <li>
-                                    <a href="http://www.tsps.ntpc.edu.tw/" target="_blank">
-                                        <h5>Tam-Shui Elementary School</h5>
-                                    </a>
-                                </li>
-                                <li class="eduDetailDate"><span>2009 Sep. ~ 2011 Jun.</span></li><br>
-                                <li>
-                                    <a href="http://www.dkes.ntpc.edu.tw/" target="_blank">
-                                        <h5>Deng-Gong Elementary School</h5>
-                                    </a>
-                                </li>
-                                <li class="eduDetailDate"><span>2005 Sep. ~ 2009 Jun.</span></li><br>
-                            </ul>
-                        </div>
-                    </div>
+                <h5>Practice</h5>
+                <ul class=workList>
+                    <li>D3.js Crossfilter Practice <a target="_blank" href="https://lessthan41.github.io/D3_Practice/barChart/barChart.html">[LINK]</a></li>
+                    <li>D3.js Line Chart Practice <a target="_blank" href="https://lessthan41.github.io/D3_Practice/Climate_HW6/Climate_HW6.html">[LINK]</a></li>
+                    <li>D3.js Line Chart Practice 2 <a target="_blank" href="https://lessthan41.github.io/D3_Practice/Climate_HW7/Climate_HW7.html">[LINK]</a></li>
+                    <li>D3.js Line Chart Practice 3 <a target="_blank" href="https://lessthan41.github.io/D3_Practice/Climate_HW8/Climate8.html">[LINK]</a></li>
+                    <li>Openlayers Practice <a target="_blank" href="https://lessthan41.github.io/OL_Practice/map_drawLine/map.html">[LINK]</a></li>
+                </ul>
 
                 </div>
-                <div class="col-1"></div>
-            </div>
-        </div>
-        <!------------------------------------------>
-        <div class="inner container"><br><br>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-9 title" id=Experience><img src="./image/experience.png" alt="experience" class="titleImg"> Experience</div>
-            </div>
-            <div class="row text expDiv">
                 <div class="col-2"></div>
-                <div class="col-4">
-                    <!-- Exp Company -->
-                    <ul class="companyUl">
-                        <li>
-                            <a href="https://global.9splay.com/" target="_blank">
-                                <h5>9Splay Entertainment Tech. Co., Ltd</h5>
-                            </a>
-                        </li>
-                        <li class="workdate">
-                            <span>2020 Dec. ~ 2021 Jun.</span>
-                        </li>
-                        <!-- <p></p><br> -->
-                        <ul>
-                            <li>Stage Design</li>
-                            <li>Mechanism Design</li>
-                        </ul><br>
-
-                        <li>
-                            <a href="" target="_blank">
-                                <h5>Election Commission of NTU Student Association</h5>
-                            </a>
-                        </li>
-                        <li class="workdate">
-                            <span>2019 May.</span>
-                        </li>
-                        <!-- <p></p><br> -->
-                        <ul>
-                            <li>On-site engineer for election system</li>
-                        </ul><br>
-
-                        <li>
-                            <a href="https://www.1111.com.tw/corp/67712337/" target="_blank">
-                                <h5>Yu Zhi Co., Ltd (Summer Intern)</h5>
-                            </a>
-                        </li>
-                        <li class="workdate">
-                            <span>2018 Jun. ~ 2018 Jul.</span>
-                        </li>
-                        <ul>
-                            <li>Data Analysis</li>
-                            <li>Information Management</li>
-                        </ul><br>
-                        <!-- <p>Learning about how Geography is utilized in the reality.</p><br> -->
-                        <li>
-                            <a href="https://www.izone.com.tw/" target="_blank">
-                                <h5>iZone Co., Ltd (Summer Intern)</h5>
-                            </a>
-                        </li>
-                        <li class="workdate">
-                            <span>2017 Jun. ~ 2017 Jul.</span>
-                        </li>
-
-                        <ul>
-                            <li>Quality Management</li>
-                            <li>Stability Test</li>
-                        </ul><br>
-                        <!-- <p>Learning about how camera works, resolution and some application.</p> -->
-                    </ul>
-                </div>
-                <div class="col-5">
-                    <!-- Map -->
-                    <div id="map" class="map"></div>
-                    <!-- Overlay -->
-                    <div id="marker1" title="Marker"></div>
-                    <div id="marker2" title="Marker"></div>
-                    <div id="marker3" title="Marker"></div>
-                    <div id="marker4" title="Marker"></div>
-                    <div id="popup1" class="popup"><a>iZone</a></div>
-                    <div id="popup2" class="popup"><a>Yu-Zhi</a></div>
-                    <div id="popup3" class="popup"><a>NTU</a></div>
-                    <div id="popup4" class="popup"><a>9Splay</a></div>
-                </div>
-                <div class="col-1"></div>
             </div>
         </div>
+
         <!------------------------------------------>
         <div class="inner container"><br><br>
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-9 title" id=Skills><i class="fas fa-award"></i> Skills</div>
             </div>
-            <div class="row" id=chartRow>
+            <!-- <div class="row" id=chartRow>
                 <div class="col-2"></div>
                 <div class="col-8">
                     <div class="chart-div">
@@ -302,7 +166,83 @@
                     </div>
                 </div>
                 <div class="col-2"></div>
+            </div> -->
+
+
+            <div class="row skillRow" id=skillRow3>
+                <div class="col-2"></div>
+                <div class="col-4">
+
+                    <!-- Python intro -->
+                    <div id=forInsertTxt style="display: none;"></div>
+                    <div class="skillIntro" id=skillIntro3>
+                        <h4>Computer Vision</h4>
+                        <ul>
+                            <li>Taking Advanced Computer Vision Course in NTHU (A)</li>
+                            <li>Building Deep Learning Models in Pytorch</li>
+                            <li>Critical Thinking, Model/Module/Hyperparameters Adjustment</li>
+                        </ul>
+                        <h4>Image Anomaly Detection</h4>
+                        <ul>
+                            <li>Reasearch Topic in Master Program</li>
+                            <li>Knowing Domain Knowledge</li>
+                            <li>Thesis: Multi-instance Anomaly Detection</li>
+                        </ul>
+                        <h4>Comoputer Graphics</h4>
+                        <ul>
+                            <li>Taking Advanced Computer Graphics Course in NTHU (A+)</li>
+                            <li>Shader, Lighting Skills, OpenGL Programming</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-5 flow carouselDiv" id=carouselDiv3>
+                    <div id=forInsertImg style="display: none;"></div>
+                    <!-- Carousel -->
+                    <div id="carousel3" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" src="./image/instad.png" alt="instad">
+                                    <figcaption class="figure-caption text-center">
+                                        Thesis Paper in Master Program: InstAD.<br>
+                                        <p>(Jul., 2024)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" src="./image/cg.png" alt="computer graphics">
+                                    <figcaption class="figure-caption text-center">
+                                        Implementing Lighting Mode Switch using OpenGL.<br>
+                                        <p>(Jan., 2024)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/ad_hw.png" alt="AD Homework">
+                                    <figcaption class="figure-caption text-center">
+                                        Design <a href="https://colab.research.google.com/drive/1s759zyBAPMawNRjDmgQZofYINpY4a7Hf" target="_blank">Assignments</a> for Anomaly Detection Class<br>
+                                        <p>(May, 2024)</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-1"></div>
             </div>
+
+
 
             <div class="row skillRow" id=skillRow1>
                 <div class="col-2"></div>
@@ -314,8 +254,8 @@
                                 <figure class="figure">
                                     <img class="figure-img img-fluid rounded d-block w-100" src="./image/TSearch.png" alt="T-Search">
                                     <figcaption class="figure-caption text-center">
-                                        Historical Typhoon Search System, using HTML.<br>
-                                        <p>(July, 2019)</p>
+                                        Historical Typhoon Search System.<br>
+                                        <p>(Jul., 2019)</p>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -341,8 +281,8 @@
                                 <figure class="figure">
                                     <img class="figure-img img-fluid rounded d-block w-100" src="./image/openlayers.png" alt="HTML">
                                     <figcaption class="figure-caption text-center">
-                                        2018 Referendum Result in Taiwan, using HTML.<br>
-                                        <p>(Jan. , 2018)</p>
+                                        2018 Referendum Result in Taiwan.<br>
+                                        <p>(Jan., 2018)</p>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -350,8 +290,8 @@
                                 <figure class="figure">
                                     <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/R.png" alt="R">
                                     <figcaption class="figure-caption text-center">
-                                        Spatial Points Data Analysis, calculating by R.<br>
-                                        <p>(Mar. , 2019)</p>
+                                        Spatial Points Data Analysis, calculating by R Programming.<br>
+                                        <p>(Mar., 2019)</p>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -383,8 +323,8 @@
                         </ul>
                         <h4>Python</h4>
                         <ul>
-                            <li>Pandas ─ Analysing data, spatial analysis</li>
-                            <li>Flask ─ Web application developing</li>
+                            <li>Pandas ─ Analysing Data, Spatial Analysis</li>
+                            <li>Flask ─ Web Application Developing</li>
                         </ul>
                     </div>
                 </div>
@@ -423,7 +363,7 @@
                                 <figure class="figure">
                                     <img class="figure-img img-fluid rounded d-block w-100" src="./image/ENVI.png" alt="ENVI">
                                     <figcaption class="figure-caption text-center">
-                                        2017 ROI masking with threshold, using ENVI.<br>
+                                        Remote Sensing ROI masking using ENVI.<br>
                                         <p>(Jan. , 2019)</p>
                                     </figcaption>
                                 </figure>
@@ -432,7 +372,7 @@
                                 <figure class="figure">
                                     <img class="figure-img img-fluid rounded d-block w-100" src="./image/Liao.png" alt="C++">
                                     <figcaption class="figure-caption text-center">
-                                        Web Socket Programming, using C++.<br>
+                                        Web Socket Programming using C++.<br>
                                         <p>(Jun. , 2019)</p>
                                     </figcaption>
                                 </figure>
@@ -441,7 +381,7 @@
                                 <figure class="figure">
                                     <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/arcmap.png" alt="Arcmap">
                                     <figcaption class="figure-caption text-center">
-                                        3D Terrain Model, using ArcMap<br>
+                                        Tackling 3D Terrain Model using ArcMap<br>
                                         <p>(May, 2018)</p>
                                     </figcaption>
                                 </figure>
@@ -450,7 +390,7 @@
                                 <figure class="figure">
                                     <img class="figure-img img-fluid rounded d-block w-100" id=ArcmapImg src="./image/dinogame.png" alt="Arcmap">
                                     <figcaption class="figure-caption text-center">
-                                        Dino Game Practice for fun, using Java.<br>
+                                        Dino Game Application using Java.<br>
                                         <p>(June, 2019)</p>
                                     </figcaption>
                                 </figure>
@@ -475,49 +415,31 @@
         <div class="inner container"><br><br>
             <div class="row">
                 <div class="col-1"></div>
-                <div class="col-9 title" id=Works><i class="fas fa-code-branch"></i>Works</div>
+                <div class="col-9 title" id=Laboratory><i class="fas fa-user-tie"></i> Laboratory</div>
             </div>
-            <div class="row text" id=workDiv>
-                <div class="col-2"></div>
-                <div class="col-8">
 
-                <h5>Journal Paper</h5>
-                <ul class=workList>
-                    <li>Kung, H.-K. , Hsieh, C.-M., Ho, C.-Y., Tsai, Y.-C. Tsai, M.-H., Chan, H.-Y. (2021) DataAugmented Hybrid Named Entity Recognition for Disaster Management by Transfer Learning, Computing and Artificial Intelligence, Appl. Sci. 2020, xx, 5; doi:10.3390/appxx010005<a target="_blank" href="https://www.mdpi.com/2076-3417/10/12/4234">[LINK]</a></li>
-                    <li>Tsai, M.-H., Chan, H.-Y., Hsieh, C.-M., Ho, C.-Y., Kung, H.-K., Tsai, Y.-C. and Cho, I.-C. (2019). Historical Typhoon Search Engine Based on Track Similarity. International Journal of Environmental Research and Public Health, 16(24), 4879. doi:10.3390/ijerph16244879<a target="_blank" href="https://www.mdpi.com/1660-4601/16/24/4879">[LINK]</a></li>
-                </ul>
-
-                <h5>Conference Paper</h5>
-                <ul class=workList>
-                    <li>Hsieh, C.-M., Ho, C.-Y., Kung, H.-K., Chan, H.-Y., Tsai, M.-H. and Tsai, Y.-C. (2020). Track Similarity-based Typhoon Search Engine for Disaster Preparedness. 2020 Proceedings of the 37th ISARC, Kitakyushu, Japan. October 27-29. doi:10.22260/ISARC2020/0188<a target="_blank" href="https://www.iaarc.org/publications/2020_proceedings_of_the_37th_isarc/track_similarity_based_typhoon_search_engine_for_disaster_preparedness.html">[LINK]</a></li>
-                </ul>
-
-                <h5>Acknowledgement</h5>
-                <ul class=workList>
-                    <li>Tsai, M. H., Chan, H. Y., & Liu, L. Y. (2020). Conversation-Based School Building Inspection Support System. Applied Sciences, 10(11), 3739.<a href="https://www.mdpi.com/2076-3417/10/11/3739">[LINK]</a></li>
-                    <li>Chana, H. Y., Liua, L. Y., & Tsaia, M. H. (2019). A Conversation-based System for School Building Inspections. In ISARC. Proceedings of the International Symposium on Automation and  Robotics in Construction (Vol. 36, pp. 194-200). IAARC Publications.<a target="_blank" href="https://www.iaarc.org/publications/2019_proceedings_of_the_36th_isarc/a_conversation_based_system_for_school_building_inspections.html">[LINK]</a></li>
-                </ul>
-
-                <h5>Practice</h5>
-                <ul class=workList>
-                    <li>D3.js Crossfilter Practice <a target="_blank" href="https://lessthan41.github.io/D3_Practice/barChart/barChart.html">[LINK]</a></li>
-                    <li>D3.js Line Chart Practice <a target="_blank" href="https://lessthan41.github.io/D3_Practice/Climate_HW6/Climate_HW6.html">[LINK]</a></li>
-                    <li>D3.js Line Chart Practice 2 <a target="_blank" href="https://lessthan41.github.io/D3_Practice/Climate_HW7/Climate_HW7.html">[LINK]</a></li>
-                    <li>D3.js Line Chart Practice 3 <a target="_blank" href="https://lessthan41.github.io/D3_Practice/Climate_HW8/Climate8.html">[LINK]</a></li>
-                    <li>Openlayers Practice <a target="_blank" href="https://lessthan41.github.io/OL_Practice/map_drawLine/map.html">[LINK]</a></li>
-                </ul>
-
-                </div>
-                <div class="col-2"></div>
-            </div>
-        </div>
-        <!------------------------------------------>
-        <div class="inner container"><br><br>
-            <div class="row">
+            <div class="row text" id=labDiv2>
                 <div class="col-1"></div>
-                <div class="col-9 title" id=Lab><i class="fas fa-user-tie"></i> Lab</div>
+                <div class="col-10">
+                    <div class="card">
+                        <div class="labImg">
+                            <div class="labFilter" id=lab3>
+                                <div class="visitLab" id=visitLab3><a href='http://cv.cs.nthu.edu.tw/' target='_blank'>Visit CVLab</a></div>
+                            </div>
+                            <div id=labImg3>
+                                <img class="card-img-top" src="./image/cvlab.png" alt="cvlab">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">CVLab, NTHU</p>
+                            <div class="labTime"><span>2022 April. ~ 2025 Jan.</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
             </div>
-            <div class="row text" id=labDiv>
+
+            <div class="row text" id=labDiv1>
                 <div class="col-1"></div>
 
                 <div class="col-5">
@@ -532,7 +454,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">Peculab, NTU</p>
-                            <div class="labTime"><span>2018 Sep. ~ </span></div>
+                            <div class="labTime"><span>2018 Sep. ~ 2022 Jan.</span></div>
                         </div>
                     </div>
                 </div>
@@ -549,7 +471,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">HCILab, NTUST</p>
-                            <div class="labTime"><span>2018 Sep. ~ </span></div>
+                            <div class="labTime"><span>2018 Sep. ~ 2022 Jan.</span></div>
                         </div>
                     </div>
                 </div>
@@ -558,37 +480,265 @@
             </div>
         </div>
         <!------------------------------------------>
+        <div class="inner container"><br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 title" id=Education><img src="./image/education.png" alt="experience" class="titleImg"> Education</div>
+            </div>
+            <div class="row text">
+                <div class="col-3"></div>
+                <div class="col-8">
+
+                    <span class="year">2025</span>
+                    <div class="flow">
+                        <svg width="80" height="110">
+                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
+                        <div class="schoolInfo">
+                            <ul class="edu">
+                                <li>
+                                    <a href="http://web.cs.nthu.edu.tw/" target="_blank">
+                                        <h5>Dept. of Computer Science, National Tsing-Hua University</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2022 Sep. ~ 2025 Jan.</span></li><br>
+                            </ul>
+                        </div><br>
+                    </div>
+
+                    <span class="year">2021</span>
+                    <div class="flow">
+                        <svg width="80" height="110">
+                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
+                        <div class="schoolInfo">
+                            <ul class="edu">
+                                <li>
+                                    <a href="http://www.geog.ntu.edu.tw/index.php/tw/" target="_blank">
+                                        <h5>Dept. of Geography, National Taiwan University</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2017 Sep. ~ 2021 Jun.</span></li><br>
+                            </ul>
+                        </div><br>
+                    </div>
+
+                    <span class="year">2017</span>
+                    <div class="flow">
+                        <svg width="80" height="110">
+                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
+                        <div class="schoolInfo">
+                            <ul class="edu">
+                                <li>
+                                    <a href="https://www2.ck.tp.edu.tw/" target="_blank">
+                                        <h5>Chien-Kuo Senior High School</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2014 Sep. ~ 2017 Jun.</span></li><br>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <span class="year">2014</span>
+                    <div class="flow">
+                        <svg width="80" height="110">
+                            <line x1="30" y1="20" x2="30" y2="100" stroke="#818990" /></svg>
+                        <div class="schoolInfo">
+                            <ul class="edu">
+                                <li>
+                                    <a href="http://www.jdjh.ntpc.edu.tw/default_page.asp" target="_blank">
+                                        <h5>Jeng-De Junior High School</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2011 Sep. ~ 2014 Jun.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <span class="year">2011</span>
+                    <div class="flow">
+                        <svg width="80" height="180">
+                            <line x1="30" y1="20" x2="30" y2="180" stroke="#818990" /></svg>
+                        <div class="schoolInfo">
+                            <ul class="edu">
+                                <li>
+                                    <a href="http://www.tsps.ntpc.edu.tw/" target="_blank">
+                                        <h5>Tam-Shui Elementary School</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2009 Sep. ~ 2011 Jun.</span></li><br>
+                                <li>
+                                    <a href="http://www.dkes.ntpc.edu.tw/" target="_blank">
+                                        <h5>Deng-Gong Elementary School</h5>
+                                    </a>
+                                </li>
+                                <li class="eduDetailDate"><span>2005 Sep. ~ 2009 Jun.</span></li><br>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <!------------------------------------------>
+        <div class="inner container"><br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 title" id=Experience><img src="./image/experience.png" alt="experience" class="titleImg"> Experience</div>
+            </div>
+            <div class="row text expDiv">
+                <div class="col-2"></div>
+                <div class="col-6">
+                    <!-- Exp Company -->
+                    <ul class="companyUl">
+
+                        <li>
+                            <a href="" target="_blank">
+                                <h5>Teaching Assistant @ NTHU</h5>
+                            </a>
+                        </li>
+                        <li class="workdate">
+                            <span>2023 Sep. ~ 2024 Jan.</span>
+                        </li>
+                        <!-- <p></p><br> -->
+                        <ul>
+                            <li>CS65800 Machine Learning for Anomaly Detection</li>
+                        </ul><br>
+
+                        <li>
+                            <a href="" target="_blank">
+                                <h5>Teaching Assistant @ NTU Summer School</h5>
+                            </a>
+                        </li>
+                        <li class="workdate">
+                            <span>2019 Jul. ~ 2019 Aug.</span>
+                        </li>
+                        <!-- <p></p><br> -->
+                        <ul>
+                            <li>R Programming for Data Science</li>
+                            <li>Exploratory data analysis</li>
+                        </ul><br>
+
+                        <li>
+                            <a href="" target="_blank">
+                                <h5>Election Commission of NTU Student Association</h5>
+                            </a>
+                        </li>
+                        <li class="workdate">
+                            <span>2019 May.</span>
+                        </li>
+                        <!-- <p></p><br> -->
+                        <ul>
+                            <li>On-site engineer for election system</li>
+                        </ul><br>
+
+                        <li>
+                            <a href="https://global.9splay.com/" target="_blank">
+                                <h5>9Splay Entertainment Tech. Co., Ltd</h5>
+                            </a>
+                        </li>
+                        <li class="workdate">
+                            <span>2020 Dec. ~ 2021 Jun.</span>
+                        </li>
+                        <!-- <p></p><br> -->
+                        <ul>
+                            <li>Stage Design</li>
+                            <li>Mechanism Design</li>
+                        </ul><br>
+
+                        <li>
+                            <a href="https://www.1111.com.tw/corp/67712337/" target="_blank">
+                                <h5>Yu Zhi Co., Ltd (Summer Intern)</h5>
+                            </a>
+                        </li>
+                        <li class="workdate">
+                            <span>2018 Jun. ~ 2018 Jul.</span>
+                        </li>
+                        <ul>
+                            <li>Data Analysis</li>
+                            <li>Information Management</li>
+                        </ul><br>
+                        <!-- <p>Learning about how Geography is utilized in the reality.</p><br> -->
+                        <li>
+                            <a href="https://www.izone.com.tw/" target="_blank">
+                                <h5>iZone Co., Ltd (Summer Intern)</h5>
+                            </a>
+                        </li>
+                        <li class="workdate">
+                            <span>2017 Jun. ~ 2017 Jul.</span>
+                        </li>
+
+                        <ul>
+                            <li>Quality Management</li>
+                            <li>Stability Test</li>
+                        </ul><br>
+                        <!-- <p>Learning about how camera works, resolution and some application.</p> -->
+                    </ul>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row text">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <!-- Map -->
+                    <div id="map" class="map"></div>
+                    <!-- Overlay -->
+                    <div id="marker1" title="Marker"></div>
+                    <div id="marker2" title="Marker"></div>
+                    <div id="marker3" title="Marker"></div>
+                    <div id="marker4" title="Marker"></div>
+                    <div id="popup1" class="popup"><a>iZone</a></div>
+                    <div id="popup2" class="popup"><a>Yu-Zhi</a></div>
+                    <div id="popup3" class="popup"><a>NTU</a></div>
+                    <div id="popup4" class="popup"><a>9Splay</a></div>
+                    <div id="popup5" class="popup"><a>NTHU</a></div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <!------------------------------------------>
         <div class="inner innerLast container"><br><br>
             <div class="row">
                 <div class="col-1"></div>
-                <div class="col-9 title" id=Interest><i class="fas fa-music"></i> Interest</div>
+                <div class="col-9 title" id=Hobbies><i class="fas fa-music"></i> Hobbies</div>
             </div>
-            <div class="row text" id=interestDiv>
+            <div class="row text" id=hobbyDiv>
                 <div class="col-2"></div>
                 <div class="col-8">
-
                     <div class="card">
-                        <div class="interestRow">
-                            <div class="interestImg" id=interestImg1></div>
-                            <div class="interestText" id=interestText1>
+                        <div class="hobbyRow">
+                            <div class="hobbyText" id=hobbyText3>
+                                <h5>Digital Painting</h5>
+                                <div class="idol"><span class="idolWord">I like to try different style of painting!</div>
+                            </div>
+                            <div class="hobbyImg hobbyImg2" id=hobbyImg3></div>
+                        </div>
+                        <div class="hobbyRow">
+                            <div class="hobbyText" id=hobbyText4>
+                                <h5>Knitting</h5>
+                                <div class="idol"><span class="idolWord">Happy Knitting! Still learning!</div>
+                                </div>
+                            <div class="hobbyImg hobbyImg2" id=hobbyImg4></div>
+                        </div>
+                        <div class="hobbyRow">
+                            <div class="hobbyImg hobbyImg1" id=hobbyImg1></div>
+                            <div class="hobbyText" id=hobbyText1>
                                 <h5>Guitar</h5>
-                                <div class="interestDetail"><span>My favorite one ,<br> especially Fingerstyle.</span></div>
+                                <div class="hobbyDetail"><span>My favorite one ,<br> especially Fingerstyle.</span></div>
                                 <div class="idol"><span class="idolWord">Idol: &nbsp;</span><span><a href="http://www.sunghajung.com/" target="_blank">Sungha Jung</a></span></div>
                             </div>
                         </div>
 
-                        <div class="interestRow">
-                            <div class="interestText" id=interestText2>
+                        <div class="hobbyRow">
+                            <div class="hobbyText" id=hobbyText2>
                                 <h5>K-Pop</h5>
-                                <div class="interestDetail"><span>Life is Music !</span><br></div>
+                                <div class="hobbyDetail"><span>Life is Music!</span><br></div>
                                 <div class="idol"><span class="idolWord">Idol:&nbsp;</span><span>
                                         <a href="http://taeyeon.smtown.com" target="_blank">TaeYeon (태연)</a><br>&nbsp;
                                         <a href="https://www.instagram.com/dlwlrma/?hl=zh-tw" target="_blank">IU (이지은)</a></span>
                                 </div>
                             </div>
-                            <div class="interestImg" id=interestImg2></div>
+                            <div class="hobbyImg hobbyImg1" id=hobbyImg2></div>
                         </div>
-
                     </div>
 
                 </div>

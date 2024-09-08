@@ -200,7 +200,7 @@ background: rgb(219,219,219);
     height: -webkit-fill-available;
     width: -webkit-fill-available;
     background-size: cover;
-    background-image: url(./image/me.png);
+    background-image: url(./image/me.jpg);
     clip-path: polygon(0 0, 100% 0%, 54% 100%, 0% 100%);
 }
 
@@ -365,7 +365,7 @@ figcaption p {
 
 .skillIntro ul {
     margin-bottom: 5vh;
-    list-style: none;
+    /* list-style: none; */
 }
 
 .skillIntro p {
@@ -418,9 +418,14 @@ figcaption p {
     margin-left: 2vw;
 }
 
+.expDiv {
+    border-bottom-width: 0px;
+}
+
 /* Experience Map */
 .map{
-    height: 550px;
+    height: 300px;
+    margin: auto;
 }
 /* Map Marker and Popup */
 #marker1, #marker2, #marker3, #marker4 {
@@ -444,21 +449,23 @@ figcaption p {
     left: -50px;
     min-width: 58px;
 }
-#popup1 a, #popup2 a, #popup3 a, #popup4 a {
+#popup1 a, #popup2 a, #popup3 a, #popup4 a, #popup5 a {
     font-weight: 500;
     color: white;
     vertical-align: 6px;
 }
 
 /* Lab */
-#labDiv .card{
+.labDiv .card{
     margin: auto;
 }
-.labImg{
-    width: 100%;
-    padding: 5px;
+.labImg {
+    position: relative;
+    width: 100%;        /* Full width */
+    padding: 5px;       /* Padding around the content */
     object-fit: cover;
     background-color: aliceblue;
+    box-sizing: border-box;  /* Includes padding in the element's total size */
 }
 .labImg img{
     width: 100%;
@@ -471,23 +478,30 @@ figcaption p {
         transform: scale(1.05);
     }
 }
-#labImg1{
+/* #labImg1{
     z-index: -1;
-    /* animation: labImg 1s linear infinite; */
-}
-.labFilter{
-    z-index:1;
-    transition: .5s;
+} */
+.labFilter {
+    z-index: 1;
+    transition: 0.3s;
     position: absolute;
-    /* width: 98%;
-    height: 79%; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 5px; /* Same padding as the outer div */
+    box-sizing: border-box; /* Includes padding within its width/height calculation */
 }
-.visitLab{
+.visitLab {
+    position: absolute; /* Position it relative to its closest positioned ancestor */
+    bottom: 0; /* Place it at the bottom of the parent div */
+    left: 0;
+    right: 0;
     z-index: 2;
     text-align: center;
-    margin-top: 47%;
     font-size: x-large;
     font-weight: 400;
+    display: none;
 }
 .visitLab a{
     color: white;
@@ -512,41 +526,51 @@ figcaption p {
     font-family: Corbel;
 }
 
-/* Interest */
+/* Hobbies */
 .card{
     box-shadow: 0.5px 0.5px 4px #cdbaba;
 }
-.interestRow{
+.hobbyRow{
     display: flex;
 }
-/* Interest Img */
-#interestImg1{
+/* hobby Img */
+#hobbyImg1{
     margin-left: 0px;
     margin-right: auto;
     background-image: url(./image/guitar.jpg);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
 }
-#interestImg2{
+#hobbyImg2{
     margin-right: 0px;
     margin-left: auto;
     background-image: url(./image/IU.jpg);
     clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
-#interestImg3{
+#hobbyImg3{
+    margin-left: 0px;
+    margin-right: auto;
+    background-image: url(./image/painting.jpg);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+#hobbyImg4{
     margin-right: 0px;
     margin-left: auto;
-    background-image: url(./image/games.png);
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
+    background-image: url(./image/knitting.png);
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
-.interestImg{
+.hobbyImg{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
     height: 236px;
     width: 426px;
-    background-size: 100%;
-    background-repeat-y: no-repeat;
-    overflow-x: hidden;
 }
-/* Interest Text Position */
-.interestText{
+/* .hobbyImg1{
+} */
+/* .hobbyImg2{
+} */
+/* hobby Text Position */
+.hobbyText{
     /* Independent Center */
     position: absolute;
     width: 50%;
@@ -556,32 +580,42 @@ figcaption p {
     text-align: center;
     line-height: 1.5;
 }
-#interestText1{
+#hobbyText1{
     right: 0;
     padding-left: 8.5%;
     padding-right: 5%;
 }
-#interestText2{
+#hobbyText2{
+    left: 0;
+    padding-left: 5%;
+    padding-right: 8.5%;
+}
+#hobbyText3{
+    right: 0;
+    padding-left: 8.5%;
+    padding-right: 5%;
+}
+#hobbyText4{
     left: 0;
     padding-left: 5%;
     padding-right: 8.5%;
 }
 
-/* Interest Title */
-.interestText h5{
+/* hobby Title */
+.hobbyText h5{
     margin-top: 20%;
     margin-bottom: 5%;
     color: #217324;
     font-size: 2em;
     font-weight: 500;
 }
-/* Interest Content */
-.interestText span{
+/* hobby Content */
+.hobbyText span{
     color: grey;
     font-size: .9rem;
     text-align: left;
 }
-.interestText p{
+.hobbyText p{
     margin-top: 5%;
     font-size: smaller;
 }
@@ -758,7 +792,7 @@ figcaption p {
     #chartRow .col-8{
         max-width: 100%;
     }
-    #interestTxt{
+    #hobbyTxt{
         display: flex;
     }
     #skillIntro1 {
@@ -823,7 +857,7 @@ figcaption p {
     .figure{
         height: 65vw;
     }
-    #interestTxt ul, #interestTxt h4{
+    #hobbyTxt ul, #hobbyTxt h4{
         margin-left: 5vw;
         width: 100%;
     }
@@ -844,27 +878,8 @@ figcaption p {
 /*---------------------------------------------------------------------------*/
 /* Experience */
 @media screen and (max-width: 836px) {
-    .expDiv{
-        display: block;
-    }
-    .expDiv .col-4{
-        margin: auto;
-        max-width: 95%;
-        flex: none;
-    }
-    .expDiv .col-5{
-        max-width: 100%;
-        flex: none;
-        margin: auto;
-        margin-top: 5vh;
-        flex: none;
-    }
-    .expDiv ul{
-        margin-left: 18vw;
-    }
-
     #map{
-        width: 80vw;
+        width: auto;
         margin: auto;
     }
 }
@@ -873,24 +888,24 @@ figcaption p {
         margin-left: 10vw;
     }
     .map{
-        height: 200px;
+        height: 100px;
     }
 }
 
 /* ------------------------------------------------------------------------- */
 /* labDiv */
 @media screen and (max-width: 900px) {
-    #labDiv{
+    .labDiv{
         display: block;
     }
-    #labDiv .col-5{
+    .labDiv .col-5{
         margin: auto;
         max-width: 55vw;
         margin-bottom: 35px;
     }
 }
 @media screen and (max-width: 725px) {
-    #labDiv .col-5{
+    .labDiv .col-5{
         max-width: 70vw;
     }
 }
@@ -904,34 +919,34 @@ figcaption p {
 }
 
 /* ------------------------------------------------------------------------- */
-/* Interest */
+/* hobby */
 @media screen and (max-width: 1200px) {
-    .interestRow{
+    .hobbyRow{
         height: 236px;
     }
-    .interestImg{
+    .hobbyImg{
         height: 250px;
         width: 355px;
     }
-    .interestRow span{
+    .hobbyRow span{
         font-size: .9rem;
     }
 }
 @media screen and (max-width: 991px) {
-    .interestRow{
+    .hobbyRow{
         height: auto;
     }
-    .interestImg{
+    .hobbyImg{
         width: calc(58% + 5px);
         height: 28vw;
     }
-    .interestDetail{
+    .hobbyDetail{
         margin-top: 5vh;
     }
-    .interestText{
+    .hobbyText{
         line-height: 1.25;
     }
-    .interestText h5{
+    .hobbyText h5{
         font-size: 4vw;
     }
     .idol{
@@ -940,12 +955,12 @@ figcaption p {
 }
 
 @media screen and (max-width: 870px) {
-    .interestDetail{
+    .hobbyDetail{
         margin-top: 2vw;
     }
 }
 @media screen and (max-width: 670px) {
-    #interestDiv .col-2{
+    #hobbyDiv .col-2{
             display: none;
     }
     .idol{
@@ -953,10 +968,10 @@ figcaption p {
     }
 }
 @media screen and (max-width: 600px) {
-    .interestImg{
+    .hobbyImg{
         width: calc(57% + 8px);
     }
-    .interestDetail span, .idol span{
+    .hobbyDetail span, .idol span{
         font-size: .7rem;
     }
 }
@@ -964,25 +979,25 @@ figcaption p {
     .idol{
         margin-top: 0px;
     }
-    .interestText h5{
+    .hobbyText h5{
         font-size: 4vw;
         margin-bottom: unset;
     }
     .idol{
         margin-top: 4vw;
     }
-    .interestDetail{
+    .hobbyDetail{
         display: none;
     }
-    .interestImg{
+    .hobbyImg{
         width: calc(57% + 6px);
     }
 }
 @media screen and (max-width: 300px) {
-    .interestRow{
+    .hobbyRow{
         height: auto;
     }
-    .interestImg{
+    .hobbyImg{
         width: calc(57% + 4px);
         height: 26vw;
     }
