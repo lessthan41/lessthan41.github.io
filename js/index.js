@@ -82,21 +82,18 @@ $('#navicon').hover(function(){
 // For RWD change order of Carousel
 $(document).ready(function(){
   if ($(window).width() < 835){
-    $('#carousel2').insertAfter('#carousel1');
-    $('#skillIntro2').insertAfter('#skillIntro1');
+      $('.carouselDiv').css('display', 'none');
   }
 })
 
-// $(window).resize(function(){
-//   if ($(window).width() < 835){
-//       $('#carousel2').insertAfter('#carousel1');
-//       $('#skillIntro2').insertAfter('#skillIntro1');
-//   }
-//   if ($(window).width() >= 835){
-//       $('#carousel2').insertAfter('#forInsertImg');
-//       $('#skillIntro2').insertAfter('#forInsertTxt');
-//   }
-// })
+$(window).resize(function(){
+  if ($(window).width() < 835){
+      $('.carouselDiv').css('display', 'none');
+  }
+  if ($(window).width() >= 835){
+      $('.carouselDiv').css('display', '');
+  }
+})
 
 // -------------------------------------------------------------------------
 // For labImg hover

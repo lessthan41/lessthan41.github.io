@@ -315,7 +315,7 @@ background: rgb(219,219,219);
 .skillRow{
     margin-top: 20px;
 }
-#carousel1, #carousel2{
+#carousel1, #carousel2, #carousel3{
     width: 330px;
     margin: 2px;
 }
@@ -345,15 +345,8 @@ figcaption p {
 }
 
 /* Skill Intro */
-#skillIntro1 {
-    margin-top: 30px;
-    width: 330px;
-}
-
-#skillIntro2 {
-    margin-top: 50px;
-    margin-left: 0px;
-    margin-right: 10px;
+.skillIntro {
+    display: block;
 }
 
 .skillIntro h4 {
@@ -365,7 +358,6 @@ figcaption p {
 
 .skillIntro ul {
     margin-bottom: 5vh;
-    /* list-style: none; */
 }
 
 .skillIntro p {
@@ -734,7 +726,8 @@ figcaption p {
         width: 450px;
     }
     .mid ul{
-        margin-left: 83px;
+        padding: unset;
+        margin: auto;
     }
 }
 @media screen and (max-width: 500px) {
@@ -795,13 +788,9 @@ figcaption p {
     #hobbyTxt{
         display: flex;
     }
-    #skillIntro1 {
-        width: 77vw;
-    }
-    #skillIntro2 {
-        /* width: 77vw; */
+    .skillIntro {
         margin-top: 30px;
-        width: 74vw;
+        width: 77vw;
     }
     .skillIntro h4, .skillIntro ul {
         margin-left: 18vw;
@@ -812,9 +801,6 @@ figcaption p {
     .carousel figcaption{
         font-size: 0.8rem;
     }
-     #skillRow2{
-         display: none;
-     }
 }
 @media screen and (max-width: 743px) {
     .carousel figcaption{
