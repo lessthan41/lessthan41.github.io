@@ -632,6 +632,38 @@ figcaption p {
     width: 100%;
 }
 
+/* Top Button */
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3aa54c;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: block; /* Hide initially */
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.float-button:hover {
+    background-color: #2f843d;
+    transition: .25s;
+}
+
+/* Up Arrow Image */
+#upArrow {
+    width: 15px; /* Set the width of the image */
+    height: 15px; /* Set the height of the image */
+    background-image: url(./image/upArrow.png);
+    background-size: contain; /* Ensure the image fits within the div */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
 /*---------------------------------------------------------------------------*/
 /* All */
 @media screen and (max-width: 991px) {

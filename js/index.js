@@ -106,3 +106,21 @@ $('.labFilter').mouseleave(function(){
   this.style.backgroundColor = null;
   $(this).find('.visitLab').css("display", "none");
  });
+
+// -------------------------------------------------------------------------
+// Get the button element
+var toTopBtn = document.getElementById("toTopBtn");
+
+// Show the button when the user scrolls down 20px from the top
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        toTopBtn.style.display = "block";
+    } else {
+        toTopBtn.style.display = "none";
+    }
+};
+
+// Scroll to the top of the page when the button is clicked
+toTopBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
