@@ -67,7 +67,7 @@ body {
 }
 
 .innerFirst {
-    margin-top: 160px;
+    margin-top: 13em;
 }
 
 /* Scroll bar */
@@ -136,8 +136,8 @@ background: rgb(219,219,219);
 .sidenav a {
     padding: 8px 8px 8px 73px;
     text-decoration: none;
-    font-size: 22px;
-    color: #6d6363;
+    font-size: 20px;
+    color: #323030;
     display: block;
     transition: 0.3s;
 }
@@ -230,11 +230,11 @@ background: rgb(219,219,219);
 .mid ul {
     list-style: none;
     width: max-content;
-    font-family: Corbel;
     color: aliceblue;
     font-size: large;
     font-weight: 600;
     line-height: 40px;
+    margin: auto;
 }
 
 .mid li a {
@@ -277,7 +277,6 @@ background: rgb(219,219,219);
     border-bottom-width: 40px;
 }
 /* ---------------------------------------------------------------------------- */
-
 /* Bottom Title */
 .bottom .title {
     color: #416d30;
@@ -759,44 +758,30 @@ figcaption p {
     }
     .mid ul{
         text-align: left;
-        margin-left: 111px;
     }
     .innerFirst {
-        margin-top: 210px;
+        margin-top: 230px;
     }
 }
 @media screen and (max-width: 580px) {
     .mid{
         width: 450px;
     }
-    .mid ul{
-        padding: unset;
-        margin: auto;
-    }
 }
 @media screen and (max-width: 500px) {
     .mid{
         width: 380px;
-    }
-    .mid ul {
-        margin-left: 48px;
     }
 }
 @media screen and (max-width: 425px) {
     .mid{
         width: 330px;
     }
-    .mid ul {
-        margin-left: 24px;
-    }
 }
 /* For iPhone 5 */
 @media screen and (max-width: 370px) {
     .mid{
         width: 294px;
-    }
-    .mid ul {
-        margin-left: 9px;
     }
     .innerFirst {
         margin-top: 226px;
