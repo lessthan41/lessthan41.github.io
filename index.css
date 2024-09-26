@@ -51,7 +51,7 @@ body {
     width: 100%;
     background-image: url(./image/bgimage.jpg);
     background-size: 100%;
-    filter: blur(1.5px);
+    filter: blur(0.5px);
 }
 
 .bottom {
