@@ -620,6 +620,18 @@ figcaption p {
     font-family: serif;
 }
 
+/* Project */
+.projectdiv h5 {
+    color: #338665;
+}
+.projectdiv > div {
+    margin-top: 10px;
+}
+.projectdiv > div > img {
+    display: block; 
+    width: 100%;
+}
+
 /*---------------------------------------------------------------------------*/
 /* All */
 @media screen and (max-width: 991px) {
