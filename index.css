@@ -235,10 +235,12 @@ background: rgb(219,219,219);
     font-weight: 600;
     line-height: 40px;
     margin: auto;
+    margin-top: 10px;
 }
 
 .mid li a {
     margin-inline-start: 7px;
+    font-family: monospace;
 }
 
 .mid li i {
@@ -249,6 +251,7 @@ background: rgb(219,219,219);
 }
 
 #btnDiv {
+    margin-top: 10px;
     margin-left: 40px;
     letter-spacing: 15px;
 }
